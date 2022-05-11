@@ -1,4 +1,51 @@
-nav {
-    margin-left: "15px"
+header {
+    width: 1520px;
+    font-family: sans-serif;
+    display: flex;
+    font-size: 24px;
+    padding: 30px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(255, 251, 251);
+    height: 120px;
+    width: 100vw;
+
 }
-  
+.header-links {
+    margin-right: 600px;
+    display: flex;
+}
+.header-a, .header-signup{
+    padding: 0 30px 0px 0px;
+    font-size: 19px;
+    margin-top: 30px;
+}
+.header-login , .header-register {
+    border: 1px solid black;
+    padding: 16px 13px;
+}
+
+.header-signup :hover {
+    background-color: rgb(212, 212, 212);
+}
+
+
+/* .button {
+    font-family: 'dm serif text',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 0;
+    min-height: 48px;
+    padding: 13px 20px;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 22px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    -webkit-appearance: none;
+} */

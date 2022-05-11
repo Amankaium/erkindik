@@ -5,6 +5,7 @@ import {Homepage, Artists, Artworks, Login, Pricing, Register, SearchPage, SellA
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 
+
 function App() {
 
   return (

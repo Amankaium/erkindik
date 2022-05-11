@@ -1,0 +1,23 @@
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+footer {
+    border: 1px solid black;
+    font-size: 24px;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 1700px;
+    padding: 90px 90px;
+}
+.footer-link {
+    font-weight: 600;
+    padding-top: 33px;
+}
+.footer-border {
+    margin-left: 250px;
+    border-bottom: 1px solid black;
+    width: 1000px;
+}

@@ -1,10 +1,15 @@
 import React from "react";
-import './Logo.css'
+import LogoImg from "../../assets/logo.png"
 
 function Logo() {
+    const logoStyle = {
+        width: "150px",
+        height: "80px",
+    }
+
     return (
         <div>
-            <img alt="logo" src="../Assets/logo.png" />
+            <img style={logoStyle}  alt="logo" src={LogoImg} />
         </div>
     )
 }
