@@ -13,19 +13,13 @@ function Footer() {
 
     return(
         <footer>
-                        <br/><br/><br/>
-                        <br/><br/><br/>
-                        <br/><br/><br/>
-                        <br/><br/><br/>
-            <br/><br/><br/>
-
-            <br/><br/><br/>
+            <br/>
             <div className='footer-nav'>
-                <LinkA href = "/" className='footer-link'>Произведения искусства</LinkA>
+                <LinkA href = "/" className='footer-link'>О нас</LinkA>
                 <LinkA href = "/" className='footer-link'>Художники</LinkA>
                 <LinkA href = "/" className='footer-link'>Условия использования</LinkA>
                 <img style={footerStyle.imgStyle} src='https://www.pngkit.com/png/full/109-1096643_ar-hifi-logo-voxx-accessories-acoustic-research-data.png'/>
-                <LinkA href = "/" className='footer-link'>О нас</LinkA>
+                <LinkA href = "/" className='footer-link'>Произведения искусства </LinkA>
                 <LinkA href = "/" className='footer-link'>Учетная запись</LinkA>
                 <LinkA href = "/" className='footer-link'>Социальные сети</LinkA>
              </div>

@@ -3,11 +3,11 @@ header {
     font-family: sans-serif;
     display: flex;
     font-size: 24px;
-    padding: 30px;
+    padding: 10px 30px;
     justify-content: space-between;
     position: fixed;
-    background-color: rgb(255, 251, 251);
-    height: 120px;
+    background-color: rgb(232, 86, 86);
+    height: 100px;
     width: 100vw;
 
 }
@@ -20,7 +20,7 @@ header {
     font-size: 19px;
     margin-top: 30px;
 }
-.header-login , .header-register {
+.header-login , .header-register{
     border: 1px solid black;
     padding: 16px 13px;
 }

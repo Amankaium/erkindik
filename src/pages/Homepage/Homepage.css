@@ -1,0 +1,64 @@
+.homepage {
+    margin-left: 100px;
+}
+.homepage-category {
+    display: flex;
+}
+
+.homepage-a {
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px 24px ;
+    border: 1px solid #767676;
+    border-radius: 5%;
+    color: #767676;
+}
+
+.homepage-a:hover {
+    color: black;
+    border-color: black;
+}
+
+
+.list {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: #2196F3;
+}
+
+.photo-1 { grid-area: photo1; }
+.photo-2 { grid-area: photo2; }
+.photo-3 { grid-area: photo3; }
+.photo-4 { grid-area: photo4; }
+.photo-5 { grid-area: photo5; }
+.photo-6 { grid-area: photo6; }
+.photo-7 { grid-area: photo7; }
+.photo-8 { grid-area: photo8; }
+.photo-9 { grid-area: photo9; }
+.photo-10 { grid-area: photo10; }
+.photo-11 { grid-area: photo11; }
+.photo-12 { grid-area: photo12; }
+.photo-13 { grid-area: photo13; }
+
+
+.grid-container {
+    margin-right: 100px;
+    display: grid;
+    grid-template-areas:
+        "photo1 photo2 photo3"
+        "photo4 photo5 photo3"
+        "photo6 photo5 photo7"
+        "photo8 photo8 photo9"
+        "photo10 photo11 photo12 "
+        "photo13 photo11 photo12 "
+  
+    ;
+    gap: 10px;
+}
+  
+
+
+
+

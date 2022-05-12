@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <div className='header-logo'>
-        <Logo/>
+        <a><Logo/></a>
       </div>
       <div className='header-links'>
         <LinkA href="/" className='header-a'>Произведения искусства</LinkA>
@@ -17,7 +17,8 @@ function Header() {
         <LinkA href="/" className='header-a'>О нас</LinkA>
       </div>
       <div className='header-signup'>
-      <span className='header-login'> <strong><LinkA href = "/">Вход</LinkA></strong></span>
+      <span className='header-login'>
+         <strong><LinkA href = "/">Вход</LinkA></strong></span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span className='header-register'><strong><LinkA href = "/">Регистрация</LinkA></strong></span>
       </div>
