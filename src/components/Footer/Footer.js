@@ -11,9 +11,7 @@ function Footer() {
         }
     }
 
-    return(
-        <footer>
-            <br/>
+    return (<footer>
             <div className='footer-nav'>
                 <LinkA href = "/" className='footer-link'>О нас</LinkA>
                 <LinkA href = "/" className='footer-link'>Художники</LinkA>
