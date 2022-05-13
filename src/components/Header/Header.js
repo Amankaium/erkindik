@@ -1,22 +1,28 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import './Header.css';
+import '../../App'
+import LinkA from '../Link/Link';
 
 function Header() {
   return (
-    <nav>
-      <Link to="/"><Logo /></Link>|&nbsp;
-      <Link to="/artworks" >Artworks</Link>|&nbsp;
-      <Link to="/artists" >Artists</Link>|&nbsp;
-      <Link to="/pricing" >Pricing</Link>|&nbsp;
-      <Link to="/sell-art" >Sell art</Link>|&nbsp;
-      <Link to="/search" >Search</Link>|&nbsp;
-      <Link to="/login" >Login</Link>|&nbsp;
-      <Link to="/register" >Register </Link>
-      <Link to="/ArtInfo">Art Info</Link>
-    </nav>
-  
+    <header>
+      <div className='header-logo'>
+        <a href='/'><Logo/></a>
+      </div>
+      <div className='header-links'>
+        <LinkA href="/" className='header-a'>Произведения искусства</LinkA>
+        <LinkA href="/" className='header-a'>Художники</LinkA>
+        <LinkA href="/" className='header-a'>Цены</LinkA>
+        <LinkA href="/" className='header-a'>О нас</LinkA>
+      </div>
+      <div className='header-signup'>
+      <span className='header-login'>
+         <strong><LinkA href = "/">Вход</LinkA></strong></span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span className='header-register'><strong><LinkA href = "/">Регистрация</LinkA></strong></span>
+      </div>
+    </header>
   )
 }
 
