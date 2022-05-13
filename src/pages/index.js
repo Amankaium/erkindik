@@ -1,11 +1,12 @@
 import Artists from './Artists/Artists';
 import Artworks from './Artworks/Artworks';
 import Homepage from './Homepage/Homepage';
-import Login from './Login/Login';
+import SignIn from './SignIn/SignIn';
 import Pricing from './Pricing/Pricing';
-import Register from './Register/Register';
+import SignUp from './SignUp/SignUp';
 import SearchPage from './SearchPage/SearchPage';
 import SellArt from './SellArt/SellArt';
+import ForgotPassword from './ForgotPassword/ForgotPassword';
 
 
-export {Artists, Artworks, Homepage, Login, Pricing, Register, SearchPage, SellArt};
+export {Artists, Artworks, Homepage, SignIn, Pricing, SignUp, SearchPage, SellArt, ForgotPassword};
