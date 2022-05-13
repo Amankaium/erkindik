@@ -14,7 +14,9 @@ function Header() {
       <Link to="/search" >Search</Link>|&nbsp;
       <Link to="/login" >Login</Link>|&nbsp;
       <Link to="/register" >Register </Link>
+      <Link to="/ArtInfo">Art Info</Link>
     </nav>
+  
   )
 }
 
