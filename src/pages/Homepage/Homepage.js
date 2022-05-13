@@ -9,7 +9,7 @@ function Homepage() {
         <div>
             <br/><br/><br/><br/><br/><br/><br/><br/>
             <div className="homepage">
-                <h1>Категории</h1>
+                <h1>Просмотр категорий</h1>
                 <br/><br/>
                 <div className="homepage-category">
                     <LinkA className="homepage-a" href="/">Арт-Студия</LinkA>

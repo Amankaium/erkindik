@@ -1,9 +1,9 @@
 import React from "react";
-import LogoImg from "../../assets/logo.png"
+import LogoImg from "../../assets/logo2.jpg"
 
 function Logo() {
     const logoStyle = {
-        width: "150px",
+        width: "169pxpx",
         height: "80px",
     }
 

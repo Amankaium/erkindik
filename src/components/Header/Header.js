@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <div className='header-logo'>
-        <a><Logo/></a>
+        <a href='/'><Logo/></a>
       </div>
       <div className='header-links'>
         <LinkA href="/" className='header-a'>Произведения искусства</LinkA>
