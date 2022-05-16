@@ -23,7 +23,7 @@ export default function ArtInfo () {
                     <h3 className="author-name">Bibinur</h3>
                 <hr className="info-hr"></hr>
                     <div className="info-list">
-                        <div className="year">Year: 2022</div>
+                        <div className="year">Year: 2022</div> 
                         <div className="material">Material: Paper, print</div>
                         <div className="status">Status: For sale</div>
                         <div className="dimension">Dimensions: 350x450 px</div>
@@ -32,7 +32,6 @@ export default function ArtInfo () {
                     <div className="price">Price: 3200</div>
                 <hr className="info-hr"></hr>
                     <button className="buy-now">Buy Now</button>
-                <hr className="info-hr"></hr>
                     <div className="instruct-text">
                         <p>Нажимая на кнопку Купить, вы переходите на профиль пользователя, вы можете связаться с ним в наиболее удобной форме</p>
                     </div>

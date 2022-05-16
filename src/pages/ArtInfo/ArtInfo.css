@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .author-header {
     background: linear-gradient(45deg, rgb(228, 228, 127), rgb(224, 172, 73));
     height: 200px;
@@ -42,11 +38,11 @@
     width: 50%;
     height: 400px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-content: flex-start;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
 }
 .paint-name {
     font-size: 40px;
@@ -54,6 +50,10 @@
 }
 .info-hr {
     width: 100%;
+    margin-top: 10px;
+}
+.picture-cont {
+    margin-top: 30px;
 }
 .info-list {
     display: flex;
@@ -61,10 +61,13 @@
     flex-direction: column;
     align-content: flex-start;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
+    font-size: 20px;
 }
 .price {
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .buy-now {
     background-color: #48ae65;
@@ -82,7 +85,7 @@
 }
 .other-work-text {
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 27px;
 }
 .works-box {
     display: flex;
