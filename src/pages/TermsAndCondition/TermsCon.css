@@ -1,0 +1,85 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    font-family: 'dm serif text',serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 18px;
+}
+
+.flex-box-terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: space-between;
+    margin-right: 50px;
+}
+
+.h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0px 0px 30px;
+    
+}
+
+.article {
+    margin: 10px 0px 0px 30px;
+}
+
+ol {
+    margin-left: 50px;
+}
+
+ol li {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.flex-box-sell-art {
+    margin: 110px 20px 0px 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.3)),
+        url("../../assets/bg-img/bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    max-height: 300px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.flex-box-sell-art h4 {
+    padding: 40px 0px 0px 20px;
+}
+
+p {
+    padding: 10px 0px 0px 20px;
+}
+
+.flex-box-sell-art button {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(18, 17, 18);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: rgb(18, 17, 18);
+    color: #fff;
+    width: 50px;
+}
+
+@media (max-width: 850px) {
+    .flex-box-sell-art {
+        max-height: 500px;
+    }
+  }
+
+
+
+
+
