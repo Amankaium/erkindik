@@ -3,7 +3,6 @@ import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Homepage, Artists, Artworks, SignIn, Pricing, SignUp, SearchPage, SellArt, ForgotPassword} from './pages';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer'
 import About from './pages/Artists/About';
 import Info from './pages/Artists/Info';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
