@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,3 +12,10 @@ a {
 @media (max-width: 1023px) {
   
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+} */
+
