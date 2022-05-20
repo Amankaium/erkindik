@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer'
 import About from './pages/Artists/About';
 import Info from './pages/Artists/Info';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
-import Footer from './components/Footer/Footer';
 
 
 
