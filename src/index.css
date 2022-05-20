@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* body{
   font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
   background: #fff;
@@ -14,14 +15,13 @@
   color: #000;
   font-size: 24px;
 } */
-
-@media (max-width: 1023px) {
-  html, body {
-    font-size: 16px;
-  }
-}
+=======
 a {
   text-decoration: none;
-  color: black;
   cursor: pointer;
+}
+>>>>>>> fe62e9335a1ac532d75f2fbfb6c8978c96ba68ef
+
+@media (max-width: 1023px) {
+  
 }

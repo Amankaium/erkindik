@@ -4,7 +4,8 @@ header {
     font-size: 24px;
     padding: 10px 30px;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background-color: rgb(255, 255, 255);
     height: 100px;
     width: 100vw;
