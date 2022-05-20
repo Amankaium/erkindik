@@ -9,7 +9,7 @@ footer {
     align-items: center;
     cursor: pointer;
     text-align: center;
-    width: 1680px;
+    width: 100vw;
     padding: 91px 34px 0px 180px
 }
 .footer-link {
