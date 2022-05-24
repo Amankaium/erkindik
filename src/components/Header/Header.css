@@ -7,33 +7,39 @@ header {
     justify-content: space-between;
     position: fixed;
     background-color: rgb(255, 255, 255);
-    height: 100px;
+    height: 94px;
     width: 100vw;
 
 }
 .header-links {
-    margin-right: 830px;
+    margin-top: 13px;
     display: flex;
+    margin-right: 600px;
 }
 .header-a, .header-signup{
     padding: 0 30px 0px 0px;
     font-size: 19px;
-    margin-top: 30px;
+    margin-top: 17px;
 } 
- /* .header-register{
+ .header-register{
     border: 1px solid #767676;
     border-radius: 5%;
     padding: 16px 13px;
+    height: 52px;
 }
 
 .header-register:hover {
     border: 1px solid black;
     color: black;
-}  */
+} 
+.header-signup {
+    display: flex;
+}
 span {
     color: black;
     font-size: large;
 }
+
 
 /* .button {
     font-family: 'dm serif text',serif;
