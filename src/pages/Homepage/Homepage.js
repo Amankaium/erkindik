@@ -28,7 +28,7 @@ function Homepage() {
         <br/><br/><br/><br/>
 
         <div className="homepage2">
-            <h1 className="category-h1">Просмотр категорий</h1>
+            {/* <h1 className="category-h1">Просмотр категорий</h1> */}
             <br/><br/>
             <div className="homepage-category">
                 <div  className="homepage-a"><LinkA href="/">Арт-Студия</LinkA></div>
@@ -38,9 +38,18 @@ function Homepage() {
                 <div  className="homepage-a"><LinkA href="/">Фотография</LinkA></div>
                 <div  className="homepage-a"><LinkA href="/">Дизайн</LinkA></div>
                 <div  className="homepage-a"><LinkA href="/">Трендовые</LinkA></div>
-                <div  className="homepage-a"><LinkA href="/">Работа на бумаге</LinkA></div>
-                <div  className="homepage-a"><LinkA href="/">Графический дизайн</LinkA></div>
-                <div  className="homepage-a"><LinkA href="/">Человек</LinkA></div>  
+            </div>
+            <div className="homepage-category">
+                <div  className="homepage-a"><LinkA href="/">Художественный</LinkA></div>
+                <div  className="homepage-a "><LinkA href="/">Места</LinkA></div>
+                <div  className="homepage-a category-two"><LinkA href="/">Работа на бумаге</LinkA></div>
+                <div  className="homepage-a"><LinkA href="/">Дизайн</LinkA></div>
+                <div  className="homepage-a"><LinkA href="/">Коллажи</LinkA></div>
+                <div  className="homepage-a category-two"><LinkA href="/">Текстуры и узоры</LinkA></div>
+                <div  className="homepage-a"><LinkA href="/">Архитектура</LinkA></div>  
+            </div>
+            <div className="homepage-category">
+                <div  className="homepage-all"><Link className="all-category" to="/">Все категории</Link></div>  
             </div>
 
             <br/><br/><br/>
@@ -61,7 +70,6 @@ function Homepage() {
                         <p className="list-txt">some description</p>
                     </div>
                 </div>
-                {/* <br/><br/> */}
                 <div className="list">
                     <div>
                     <Link to="/"><img className="img-1" src="https://ik.imagekit.io/theartling/prod/dynamic_images/Image/7b3d99682fa34aa2aad7c0bb76f181e7.jpg?tr=w-733,h-357" /></Link>

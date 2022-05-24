@@ -17,7 +17,7 @@ body{
     color: white;
 }
 .img-h1 {
-    margin-right: 458px;
+    margin-right: 510px;
 }
 a {
     text-decoration: none;
@@ -28,15 +28,14 @@ strong {
     color: #767676;
 }
 .mini-txt {
-    margin-left: 500px;
     font-size: 18px;
 }
 .icon {
     height: 15px;
     width: 30px;
 }
-.img-form {
-    margin-left: 500px;
+.img-form, .mini-txt {
+    margin-left: 480px;
 }
 input{
     font-size: 16px;
@@ -48,27 +47,46 @@ input{
 }
 
 
-.category-h1 {
-    margin-right: 1100px;
-}
 .homepage2 {
-    margin-left: 100px;
+    margin-left: 95px;
 }
 .homepage-category {
     display: flex;
+    margin-top: 10px;
 }
-.homepage-a {
-    margin: 5px;
-    font-size: 16px;
+.homepage-a{
+    text-align: center;
+    margin-right: 10px;
+    font-size: 18px;
     line-height: 1;
-    padding: 18px 24px ;
+    height: 67px;
+    width: 220px;
+    padding: 23px 25px;
     border: 1px solid #767676;
-    border-radius: 5%;
-    color: #767676;
+    border-radius: 5px;
+    /* color: #767676; */
+
 }
-.homepage-a:hover {
+.category-two {
+    padding: 18px 25px;
+}
+.homepage-a :hover {
     color: black;
     border-color: black;
+}
+.homepage-all {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 1;
+    width: 197px;
+    height: 67px;
+    padding: 23px 25px;
+    border-radius: 5px;
+    background-color: #000000;
+}
+.all-category {
+    color: white;
 }
 
 
@@ -87,9 +105,6 @@ input{
 .list, .gc-h1 {
     margin: 0px 100px 0px 0px;
 }
-.hr {
-    margin: 0px 100px 0px 70px;
-}
 .img-2 {
     width: 330px;  
 }
@@ -103,7 +118,7 @@ input{
 
 .submit-conteiner {
     display: flex;
-    margin: 0px 130px 0px 70px;
+    margin: 0px 60px 0px 0px;
 
 }
 .sc-txt {
