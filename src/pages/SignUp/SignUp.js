@@ -3,7 +3,9 @@ import "./SignUp.css";
 import FormInput from "../../components/FormInput/FormInput";
 import { Link } from "react-router-dom";
 
+
 const SignUp = () => {
+
     const [values, setValues] = useState({
         fullname: "",
         email: "",
@@ -55,7 +57,7 @@ const SignUp = () => {
         },
     ];
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
     };
 

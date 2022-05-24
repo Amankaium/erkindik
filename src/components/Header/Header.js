@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from '../Logo/Logo';
 import './Header.css';
 import '../../App'
 import LinkA from '../Link/Link';
+import { LoginContext } from '../../App';
 
 function Header() {
+
+  const login = useContext(LoginContext)
   return (
     <header>
       <div className='header-logo'>
@@ -17,8 +20,10 @@ function Header() {
         <LinkA href="/" className='header-a'>О нас</LinkA>
       </div>
       <div className='header-signup'>
-      <span className='header-login'>
-         <strong><LinkA href = "/">Вход</LinkA></strong></span>
+        {login? <span className='header-login'>
+         <strong><LinkA href = "/artists">Личный кабинет</LinkA></strong></span> : <span className='header-login'>
+         <strong><LinkA href = "/login">Вход</LinkA></strong></span>
+         }
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span className='header-register'><strong><LinkA href = "/">Регистрация</LinkA></strong></span>
       </div>

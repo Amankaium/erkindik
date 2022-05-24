@@ -1,5 +1,5 @@
-header {
-    width: 1520px;
+/* header {
+    width: 100vw;
     font-family: sans-serif;
     display: flex;
     font-size: 24px;
@@ -9,8 +9,6 @@ header {
     top: 0;
     background-color: rgb(255, 255, 255);
     height: 100px;
-    width: 100vw;
-
 }
 .header-links {
     margin-right: 630px;
@@ -30,7 +28,7 @@ header {
 .header-login , .header-register:hover {
     border: 1px solid black;
     color: black;
-}
+} */
 
 
 /* .button {

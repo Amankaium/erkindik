@@ -46,3 +46,8 @@ button {
 .accept-terms-condition {
     margin-bottom: 10px;
 }
+
+.terms-condition-link {
+    text-decoration: underline;
+    
+}
