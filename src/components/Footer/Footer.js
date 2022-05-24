@@ -5,27 +5,23 @@ import LinkA from '../Link/Link';
 
 
 function Footer() {
-    const footerStyle = {
-        imgStyle: {
-            height: "100px"
-        }
-    }
-
-    return (<footer>
+    return (
+        <footer>
+            <br/>
             <div className='footer-nav'>
-                <LinkA href = "/" className='footer-link'>О нас</LinkA>
-                <LinkA href = "/" className='footer-link'>Художники</LinkA>
-                <LinkA href = "/" className='footer-link'>Условия использования</LinkA>
-                <img style={footerStyle.imgStyle} src='https://www.pngkit.com/png/full/109-1096643_ar-hifi-logo-voxx-accessories-acoustic-research-data.png'/>
-                <LinkA href = "/" className='footer-link'>Произведения искусства </LinkA>
-                <LinkA href = "/" className='footer-link'>Учетная запись</LinkA>
-                <LinkA href = "/" className='footer-link'>Социальные сети</LinkA>
+                <div className='footer-link'><LinkA href = "/">О нас</LinkA></div>
+                <div className='footer-link'><LinkA href = "/">Художники</LinkA></div>
+                <div className='footer-link'><LinkA href = "/">Условия использования</LinkA></div>
+                <div className='footer-logo'><Logo/></div>
+                <div className='footer-link'><LinkA href = "/">Произведения искусства </LinkA></div>
+                <div className='footer-link'><LinkA href = "/">Учетная запись</LinkA></div>
+                <div className='footer-link'><LinkA href = "/">Социальные сети</LinkA></div>
              </div>
             <br/><br/>
             <div className='footer-border'/>
-             <br/><br/><br/>
+             <br/><br/>
                 <p className='footer-p'>© Photo, Inc. 2019. We love our users!</p>
-                <Logo/>
+            <br/><br/>
         </footer>
     )
 }
