@@ -79,11 +79,6 @@ import About from './About'
 
 
 function Artists() {
-<<<<<<< HEAD
-    return (
-        <div>
-            
-=======
   return (
   
 
@@ -131,7 +126,6 @@ function Artists() {
               path='/artists/about'
             />
           </ul>
->>>>>>> 798186c853647f422540b349fb7a8b894f5f55b5
         </div>
       </div>
     </div>
