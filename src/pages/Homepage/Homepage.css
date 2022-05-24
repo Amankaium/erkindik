@@ -83,6 +83,7 @@ input{
 .hr {
     width: 1350px;
 }
+
 .list, .gc-h1 {
     margin: 0px 100px 0px 0px;
 }
@@ -106,11 +107,29 @@ input{
 
 }
 .sc-txt {
-    height: 488px;
-    padding: 50px;
-    background-color: #f1f0f0;
+    line-height: 1;
+    padding: 180px 0px 0px 0;
+}
+h2 {
+    font-size: 32px;
+}
+h2, .sc-desc {
+    text-align: center;
+    padding-right: 60px;
 }
 p {
     color: black;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.sc-img {
+    height: 488px;
+    width: 920px;
+    background: url("https://ik.imagekit.io/theartling/prod/dynamic_images/Image/17d6461ec2604ec4bb9f871964e54643.jpeg?tr=,w-920"), center / cover;
+}
+.list-txt {
+    text-align: center;
+    padding: 20px;
+}
+.img-5 {
+    height: 260px;
 }
