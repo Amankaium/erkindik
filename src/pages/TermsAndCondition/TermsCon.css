@@ -15,6 +15,7 @@
     justify-content: left;
     align-content: space-between;
     margin-right: 50px;
+    margin-top: 150px;
 }
 
 .h1 {
@@ -38,9 +39,9 @@ ol li {
 }
 
 .flex-box-sell-art {
-    margin: 110px 20px 0px 20px;
+    margin: 180px 50px 0px 20px;
     background: linear-gradient(rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0.3)),
+            rgba(255, 255, 255, 0.2)),
         url("../../assets/bg-img/bg-image.jpg");
     background-size: cover;
     background-position: center;
@@ -51,10 +52,14 @@ ol li {
 
 .flex-box-sell-art h4 {
     padding: 40px 0px 0px 20px;
+    font-weight: 900;
+    font-size: larger;
 }
 
 p {
     padding: 10px 0px 0px 20px;
+    color: #fff;
+    font-weight: 500;
 }
 
 .flex-box-sell-art button {
