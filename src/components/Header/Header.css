@@ -1,35 +1,40 @@
-/* header {
+header {
     width: 100vw;
     font-family: sans-serif;
     display: flex;
-    font-size: 24px;
     padding: 10px 30px;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
+    position: fixed;
     background-color: rgb(255, 255, 255);
-    height: 100px;
+    height: 94px;
+    width: 100vw;
 }
 .header-links {
-    margin-right: 630px;
+    margin-top: 13px;
     display: flex;
+    margin-right: 500px;
+    padding: 0 30px 0px 0px;
+
+}
+.header-a{
+    padding: 0 18px 0px 0px;
+
 }
 .header-a, .header-signup{
-    padding: 0 30px 0px 0px;
     font-size: 19px;
-    margin-top: 30px;
-}
-.header-login , .header-register{
+    margin-top: 17px;
+} 
+ .header-register{
     border: 1px solid #767676;
-    border-radius: 5%;
+    border-radius: 3px;
     padding: 16px 13px;
+    height: 52px;
 }
 
-.header-login , .header-register:hover {
+.header-register:hover {
     border: 1px solid black;
     color: black;
-} */
-
+}
 
 /* .button {
     font-family: 'dm serif text',serif;

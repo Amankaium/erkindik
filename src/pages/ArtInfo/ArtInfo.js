@@ -33,7 +33,7 @@ export default function ArtInfo () {
                 <hr className="info-hr"></hr>
                     <button className="buy-now">Buy Now</button>
                     <div className="instruct-text">
-                        <p>Нажимая на кнопку Купить, вы переходите на профиль пользователя, вы можете связаться с ним в наиболее удобной форме</p>
+                        <p>Нажимая на кнопку Купить, вы переходите на профиль пользователя, где можете связаться с ним в наиболее удобной форме</p>
                     </div>
                 </div>
                

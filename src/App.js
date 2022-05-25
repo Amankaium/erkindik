@@ -3,6 +3,8 @@ import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Homepage, Artists, Artworks, SignIn, Pricing, SignUp, SearchPage, SellArt, ForgotPassword, EditProfile} from './pages';
 import Header from './components/Header/Header';
+import About from './pages/Artists/About';
+import Info from './pages/Artists/Info';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
  
@@ -12,6 +14,7 @@ const login = {
 }
 
 export const LoginContext = React.createContext(login.login)
+
 
 function App() {
 
@@ -23,6 +26,8 @@ function App() {
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/artworks" element={<Artworks />} />
         <Route exact path="/artists" element={<Artists />} />
+        <Route exact path="/artists/about" element={<About />} />
+        <Route exact path="/artists/info" element={<Info />} />
         <Route exact path="/pricing" element={<Pricing />} />
         <Route exact path="/sell-art" element={<SellArt />} />
         <Route exact path="/search" element={<SearchPage />} />
