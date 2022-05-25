@@ -51,7 +51,6 @@ function Homepage() {
             <div className="homepage-category">
                 <div  className="homepage-all"><Link className="all-category" to="/">Все категории</Link></div>  
             </div>
-
             <br/><br/><br/>
             <div className="grid-container">
                 <h1 className="gc-h1">Графический дизайн</h1>
@@ -59,7 +58,13 @@ function Homepage() {
                 <div className="list">
                     <div>
                     <Link to="/"><img src="https://ik.imagekit.io/theartling/prod/dynamic_images/Image/1425988347b04641948d29f495532ee3.png?tr=,w-440,h-440" /></Link>
-                        <p className="list-txt">some description</p>
+                        <p className="list-txt">
+                            <Link to="/" className="artistName">Имя автора</Link>
+                            <br/>
+                            <Link to="/" className="artName">Название картины</Link>
+                            <LinkA href="/"><img className="fav-icon" src="https://cdn.icon-icons.com/icons2/38/PNG/128/like_favorite_heart_5759.png"/></LinkA>
+                            <LinkA href="/"><img className="fav-icon" src="https://cdn.icon-icons.com/icons2/1659/PNG/128/3844442-dot-menu-more-vertical_110310.png"/></LinkA>
+                        </p>
                     </div>
                     <div>
                     <Link to="/"><img src="https://ik.imagekit.io/theartling/prod/dynamic_images/Image/ab9c98e838cf4aae9ec30bbe629a1826.jpg?tr=,w-440,h-440" /></Link>
@@ -81,7 +86,7 @@ function Homepage() {
                 </div>
 
                 <br/><br/><hr className="hr"/><br/><br/>
-                <h1 className="gc-h1">Minimalist</h1>
+                <h1 className="gc-h1">Иллюстрация</h1>
                 <br/><br/>
                 <div className="list">
                     <div>

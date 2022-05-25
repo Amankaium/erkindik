@@ -143,8 +143,16 @@ p {
 }
 .list-txt {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 .img-5 {
     height: 260px;
+}
+
+.fav-icon {
+    height: 20px;
+}
+.artName {
+    font-size: 17px;
+    color: #767676;
 }
