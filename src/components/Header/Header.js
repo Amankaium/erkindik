@@ -21,7 +21,7 @@ function Header() {
       </div>
       <div className='header-signup'>
         {login? <span className='header-login'>
-         <strong><LinkA href = "/artists">Личный кабинет</LinkA></strong></span> : <span className='header-login'>
+         <strong><LinkA href = "/artists"><img src="https://w7.pngwing.com/pngs/722/101/png-transparent-computer-icons-user-profile-circle-abstract-miscellaneous-rim-account.png"/></LinkA></strong></span> : <span className='header-login'>
          <strong><LinkA href = "/login">Вход</LinkA></strong></span>
          }
       &nbsp;&nbsp;&nbsp;&nbsp;
