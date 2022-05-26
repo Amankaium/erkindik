@@ -11,8 +11,8 @@ const ProfileInput = (props) => {
   
     return (
       <div className="profileInput">
-        <label>{label}</label>
-        <input
+        <label className="profile-input-label">{label}</label>
+        <input className="profile-input"
           {...inputProps}
           onChange={onChange}
           onBlur={handleFocus}
@@ -21,7 +21,7 @@ const ProfileInput = (props) => {
           }
           focused={focused.toString()}
         />
-        <span>{errorMessage}</span>
+        <span className="profile-input-span">{errorMessage}</span>
       </div>
     );
   };

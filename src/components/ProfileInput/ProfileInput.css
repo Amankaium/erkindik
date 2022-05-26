@@ -4,7 +4,7 @@
     width: 500px;
 }
 
-input {
+.profile-input {
     padding: 15px;
     margin: 10px 0px;
     border-radius: 5px;
@@ -13,22 +13,22 @@ input {
 }
 
 
-label {
+.profile-input-label {
     font-size: 16px;
     color: #000;
 }
 
-span {
+.profile-input-span {
     font-size: 12px;
     padding: 3px;
     color: red;
     display: none;
 }
 
-input:invalid[focused="true"] {
+.profile-input:invalid[focused="true"] {
     border: 1px solid red;
 }
 
-input:invalid[focused="true"]~span {
+.profile-input:invalid[focused="true"]~span {
     display: block;
 }

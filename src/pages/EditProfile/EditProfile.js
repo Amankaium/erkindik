@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./EditProfile.css";
 import ProfileInput from "../../components/ProfileInput/ProfileInput";
 
@@ -90,7 +89,7 @@ function EditProfile() {
                 <button className="profile-btn" onClick={changeAvatar}>Save Photo</button>
             </div>
             <div className="edit-profile">
-                <h3>Edit Profile</h3>
+                <h3 className="edit-profile-h3">Edit Profile</h3>
             {inputs.map((input) => (
                     <ProfileInput
                         key={input.id}

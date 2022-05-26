@@ -23,17 +23,13 @@
   width: 200px;
 }
 
-.profile-btn:hover {
-  color: #000;
-  background-color: #fff;
-}
-
 .edit-profile {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
-h3 {
+.edit-profile-h3 {
   color: #000;
+  font-weight: 900;
 }
 
 
