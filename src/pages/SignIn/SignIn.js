@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import "./SignIn.css";
 import FormInput from "../../components/FormInput/FormInput";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
-const SignIn = () => {
+const SignIn = ({userTokenUpdate}) => {
   const [values, setValues] = useState({
     email: "",
     password: "",
   });
+
+  const [token, setToken] = useState()
 
   const inputs = [
     {
@@ -28,16 +31,31 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    axios({
+      method: 'post',
+      url: 'http://kaiaman.pythonanywhere.com/admin/auth/user/',
+      data: {
+        email: values.email,
+        password: values.password
+      }
+    }).then (({key}) => {
+      console.log(key)
+      userTokenUpdate(key)
+    })
   };
 
   const onChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
+    setValues({ 
+      ...values,
+      [e.target.name]: e.target.value 
+    });
   };
 
   return (
     <div className="app">
-      <form onSubmit={handleSubmit}>
-        <h1>Sign in</h1>
+      <form className="sign-in-form" onSubmit={handleSubmit}>
+        <h1 className="sign-in-h1">Sign in</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -47,7 +65,7 @@ const SignIn = () => {
           />
         ))}
         <Link to="/forgot-password" className="forgot-pass-link">Forgot password?</Link>
-        <button>Sign in</button>
+        <button className="sign-in-btn">Sign in</button>
         <div className="sign-up-link">
           <Link to="/register" className="sign-up">Create account</Link>
         </div>

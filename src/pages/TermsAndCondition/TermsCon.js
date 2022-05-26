@@ -9,7 +9,7 @@ function TermsCon() {
                 <div className="h1">Terms and Conditions</div>
                 <div className="container-1">
                     <h4 className="article">Article 1. | Definitions</h4>
-                    <ol>
+                    <ol className="ol-li">
                         <li>
                             Online Gallery: Online Galerij B.V., the user of these general terms and conditions, established at Schoolstraat 1,
                             2271BZ in Voorburg, the Netherlands, registered in the Trade Register under Chamber of Commerce number 74764225.
@@ -29,7 +29,7 @@ function TermsCon() {
                 </div>
                 <div className="container-2">
                     <h4 className="article">Article 2. | Definitions</h4>
-                    <ol>
+                    <ol className="ol-li">
                         <li>
                             Online Gallery: Online Galerij B.V., the user of these general terms and conditions, established at Schoolstraat 1,
                             2271BZ in Voorburg, the Netherlands, registered in the Trade Register under Chamber of Commerce number 74764225.
@@ -49,7 +49,7 @@ function TermsCon() {
                 </div>
                 <div className="container-3">
                     <h4 className="article">Article 3. | Definitions</h4>
-                    <ol>
+                    <ol className="ol-li">
                         <li>
                             Online Gallery: Online Galerij B.V., the user of these general terms and conditions, established at Schoolstraat 1,
                             2271BZ in Voorburg, the Netherlands, registered in the Trade Register under Chamber of Commerce number 74764225.
@@ -69,22 +69,22 @@ function TermsCon() {
                 </div>
             </div>
             <div className="flex-box-sell-art">
-                <h4>
+                <h4 className="flex-box-h4">
                     Sell your atr online!
                 </h4>
-                <p>
+                <p className="flex-box-p">
                 - Cheaper, faster and better than your own website!
                 </p>
-                <p>
+                <p className="flex-box-p">
                 - Create your own artist page
                 </p>
-                <p>
+                <p className="flex-box-p">
                 - Direct contact with Artbuyers
                 </p>
-                <p>
+                <p className="flex-box-p">
                 - NO commission over sold work!
                 </p>
-                <button><Link to="/register" className="btn">Register now</Link></button>
+                <button className="flex-box-btn"><Link to="/register" className="btn">Register now</Link></button>
             </div>
         </div>
     )
