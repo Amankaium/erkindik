@@ -11,13 +11,9 @@ header {
 .header-links {
     margin-top: 13px;
     display: flex;
-    margin-right: 500px;
-    padding: 0 30px 0px 0px;
-
 }
 .header-a{
-    padding: 0 18px 0px 0px;
-
+    padding: 0 38px 0px 0px;
 }
 .header-a, .header-signup{
     font-size: 19px;
