@@ -4,6 +4,7 @@ import './Homepage.css';
 import LinkA from "../../components/Link/Link";
 import Category from "../../components/Сategories/Сategory";
 import ImgCard from "../../components/MainImgCard/ImgCard";
+import ImgList from "../../components/MainImgList/ImgList";
 // import SearchIcon from "../assets/search.png"
 
 
@@ -26,76 +27,17 @@ function Homepage(props) {
 
         <div className="homepage2">
             <Category/>
-            <div className="list-card">
-                <h1 className="gc-h1">Графический дизайн</h1>
-                <div className="list">
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>
-                </div>
+            {/* <ImgList titleList="Графический дизайн"/>
+            <ImgList titleList="Иллюстрация"/>
+            <ImgList titleList="Минимализм"/>
+            <ImgList titleList="Трендовые"/>
+            <ImgList titleList="Фотография"/>
+            <ImgList titleList="Музей"/> */}
 
-                <div className="list">
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>               
-                </div>
-                <hr className="hr"/>
-            </div>
-
-
-            <div className="list-card">
-                <h1 className="gc-h1">Иллюстрация</h1>
-                <div className="list">
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>
-                </div>
-                <div className="list">
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>
-                        <ImgCard artistName="artistName" artName="artName"/>
-                </div>
-                <hr className="hr"/>
-            </div>
-            
-            <div className="list-card">
-                <h1 className="gc-h1">Минимализм</h1>
-                <div className="list">
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/> 
-                </div>
-                <hr className="hr"/> 
-            </div>
-
-            <div className="list-card">
-                <h1 className="gc-h1">Трендовые</h1>
-                <div className="list">
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/> 
-                </div>
-                <hr className="hr"/> 
-            </div>
-
-            <div className="list-card">
-                <h1 className="gc-h1">Фотография</h1>
-                <div className="list">
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/> 
-                </div>
-                <hr className="hr"/> 
-            </div>
-
-            <div className="list-card">
-                <h1 className="gc-h1">Музей</h1>
-                <div className="list">
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/>
-                    <ImgCard artistName="artistName" artName="artName"/> 
-                </div>
-                <hr className="hr"/> 
-            </div>
+            <ImgList/>
+            <ImgList/>
+            <ImgList/>
+            <ImgList/>
 
             <Link  to="/" className="submit-conteiner">
                 <div className="sc-txt">

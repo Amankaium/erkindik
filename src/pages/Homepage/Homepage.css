@@ -53,15 +53,6 @@ p {
     padding: 5%;
 }
 
-.list-card {
-    padding: 3% 0;
-}
-.list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 1% 0;
-}
 .img-1 {
     height: 440px;
 }
@@ -78,18 +69,15 @@ p {
 
 .submit-conteiner {
     display: flex;
-    /* margin: 0px 60px 0px 0px; */
 }
 .sc-txt {
     line-height: 1;
-    /* padding: 180px 0px 0px 0; */
 }
 h2 {
     font-size: 32px;
 }
 h2, .sc-desc {
     text-align: center;
-    /* padding-right: 60px; */
 }
 .sc-img {
     height: 488px;

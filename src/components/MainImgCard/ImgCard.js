@@ -3,10 +3,10 @@ import './ImgCard.css';
 import { Link } from "react-router-dom";
 
 export default function ImgCard (props) {
-    const author = {
-        avatarUrl: "https://ik.imagekit.io/theartling/prod/dynamic_images/Image/1425988347b04641948d29f495532ee3.png?tr=,w-440,h-440",
-        height: "440px",
-    }
+    // const author = {
+    //     avatarUrl: "https://ik.imagekit.io/theartling/prod/dynamic_images/Image/1425988347b04641948d29f495532ee3.png?tr=,w-440,h-440",
+    //     height: "440px",
+    // }
 
     return (
     <Link to="/">
