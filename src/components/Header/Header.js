@@ -17,10 +17,9 @@ function Header() {
         <div className='header-a'><LinkA href="/" className='header-a'>О нас</LinkA></div>
       </div>
       <div className='header-signup'>
-      <span>ls;fm</span>
-      <span className='header-register'><strong><LinkA href = "/">Вход</LinkA></strong></span>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <span className='header-register'><strong><LinkA href = "/">Регистрация</LinkA></strong></span>
+        <div className='header-register'><strong><LinkA href = "/">Вход</LinkA></strong></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <div className='header-register'><strong><LinkA href = "/"> Регистрация</LinkA></strong></div>
       </div>
     </header>
   )
