@@ -17,34 +17,37 @@ body {
     margin-top: 50px;
   }
   h3 {
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 500;
     text-transform: uppercase;
     color: #38d16a;
     margin: 20px 0;
   }
-  .heading h1 {
+.heading h1 {
     font-size: 30px;
     margin-bottom: 30px;
+    margin-top: 60px;
   }
-  .info p {
+.about p {
     margin-bottom: 20px;
   }
-  .info .left {
+.about .left {
     padding-right: 30px;
   }
   
-  .info .img {
+.about img {
     position: relative;
     display: block;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
-    width: 50%;
+    margin-top: 100px;
+    width: 50vw;
+    padding: 20px;;
   }
-  .info img {
+.about img {
     object-fit: contain;
   }
-  .info .img::after {
+.about img::after {
     content: "";
     position: absolute;
     top: 0;
