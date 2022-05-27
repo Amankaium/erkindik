@@ -3,7 +3,12 @@ import React from 'react';
 import './Artists.css';
 import './About.css';
 import './Info';
+import './Work';
+import LinkA from "../../components/Link/Link";
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDribbble, faFacebook, faInstagram, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons"
+import img from '../../assets/artist2.jpg'
 
 
 
@@ -14,27 +19,34 @@ const About = () => {
         <div className='container flex'>
           <div className='left '>
             <div className='img'>
-              <img src='https://www.liveabout.com/thmb/Z0v5wfzDA-fOTkaL_ksqKkWHt5Y=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-667156305-59befb3daf5d3a00102437f8.jpg' alt='' />
+                <img height="600px" width="200px" src={img} />
             </div>
           </div>
           <div className='right topMarign'>
+          <div className="artist-links">
+                <div  className="artist-a"><LinkA href="info">Обо мне</LinkA></div>
+                <div  className="artist-a"><LinkA href="work">Мои работы</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Избранные</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Загрузить картину</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Редактировать профиль</LinkA></div>
+            </div><br></br>
             <h1>
-              I AM AN <br />
-              ARTIST
+              Я <br /> <br></br><br></br>
+              ХУДОЖНИК
             </h1>
             <div className='SocailIcon'>
-              <i className='fab fa-facebook-f facebook'></i>
-              <i className='fab fa-instagram instagram'></i>
-              <i className='fab fa-twitter twitter'></i>
-              <i className='fab fa-youtube youtube'></i>
-              <i className='fab fa-pinterest pinterest'></i>
-              <i className='fab fa-dribbble dribbble'></i>
+              <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faYoutube} >
+              </FontAwesomeIcon>
+              <FontAwesomeIcon icon={faDribbble}></FontAwesomeIcon>
             </div>
             <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button className='primary-btn'>Contact Us</button>
+            <button className='primary-btn'>Связаться со мной</button>
           </div>
         </div>
-        
+  
 
 
       </section>

@@ -33,27 +33,52 @@ body {
     margin-top: 50px;
 }
 
+.artist-links {
+    display: flex;
+    margin-top: 20px;
+}
+.artist-a {
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px 24px ;
+    border: 1px solid #767676;
+    border-radius: 5%;
+    color: #767676;
+}
+.artist-a:hover {
+    color: black;
+    border-color: black;
+}
+.list {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: #2196F3;
+}
+
+
 .aboutartist {
-    height:120vh;
+    height:200vh;
 
 }
 
-.aboutartist .img {
+/* .aboutartist .img {
     height: 90vh;
     width: 50%;
-}
+} */
 
 
-.aboutartist .img {
-    height: 90vh;
+ .aboutartist .img {
+    height: 0vh;
     width: 80%;
     position: relative;
-  }
+  } 
   .aboutartist img {
     position: absolute;
     top: 0;
     left: 0;
-    height: 90vh;
+    height: 150vh;
     width: 100%;
     object-fit: contain;
     transform: scale(1.1);
@@ -74,7 +99,7 @@ body {
   .SocailIcon i:hover {
     color: #fff;
   }
-  .facebook {
+.faFacebook {
     color: #4267b2;
     border: 1px solid #4267b2;
   }
@@ -148,3 +173,7 @@ body {
     color: #6185a5;
     line-height: 30px;
   }
+
+
+
+  

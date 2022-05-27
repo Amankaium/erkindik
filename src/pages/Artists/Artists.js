@@ -74,7 +74,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './Artists.css';
 import ArtistItem from './ArtistItem';
 import About from './About'
-// import { Link } from 'react-router-dom';
+import LinkA from "../../components/Link/Link";
 
 
 
@@ -83,7 +83,32 @@ function Artists() {
   
 
     <div className='artists'>
-      <h1>Start searching for artists with</h1>
+      <h1>Начните искать художников с</h1>
+      <div className="artist-links">
+                <div  className="artist-a"><LinkA href="/">А</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Б</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">В</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Г</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Д</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Е</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Ж</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">З</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">И</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">К</LinkA></div>  
+                <div  className="artist-a"><LinkA href="/">Л</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">М</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Н</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">О</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">П</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Р</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">С</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Т</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">У</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Ц</LinkA></div>  
+                <div  className="artist-a"><LinkA href="/">Щ</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Ю</LinkA></div>
+                <div  className="artist-a"><LinkA href="/">Я</LinkA></div> 
+            </div>
       <div className='artists__container'>
         <div className='artists__wrapper'>
           <ul className='artists__items'>
