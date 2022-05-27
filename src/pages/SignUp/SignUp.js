@@ -65,8 +65,8 @@ const SignUp = () => {
 
     return (
         <div className="app">
-            <form onSubmit={handleSubmit}>
-                <h1>Sign up</h1>
+            <form className="sign-up-form" onSubmit={handleSubmit}>
+                <h1 className="sign-up-h1">Sign up</h1>
                 {inputs.map((input) => (
                     <FormInput
                         key={input.id}
@@ -75,7 +75,7 @@ const SignUp = () => {
                         onChange={onChange}
                     />
                 ))}
-                <button>Submit</button>
+                <button className="sign-up-btn">Submit</button>
                 <div className="accept-terms-condition">
                     By clicking Submit, you agree on our <Link to="/terms-and-condition" className="terms-condition-link">terms and condition</Link>
                 </div>
