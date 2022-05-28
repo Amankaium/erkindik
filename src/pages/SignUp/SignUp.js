@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
     const [values, setValues] = useState({
-        fullname: "",
+        username: "",
         email: "",
         password: "",
         confirmPassword: "",
@@ -14,12 +14,12 @@ const SignUp = () => {
     const inputs = [
         {
             id: 1,
-            name: "fullname",
+            name: "username",
             type: "text",
-            placeholder: "Full name",
+            placeholder: "Логин",
             errorMessage:
-                "Full name should be 1-50 characters and shouldn't include any special character!",
-            label: "Full name",
+                "Имя пользователя должно содержать от 1 до 50 символов и не должно содержать никаких специальных символов!",
+            label: "Логин",
             pattern: "^[A-Za-z0-9]{1,50}$",
             required: true,
         },
@@ -28,7 +28,7 @@ const SignUp = () => {
             name: "email",
             type: "email",
             placeholder: "Email",
-            errorMessage: "It should be a valid email address!",
+            errorMessage: "Это должен быть действующий адрес электронной почты!",
             label: "Email",
             required: true,
         },
@@ -36,10 +36,10 @@ const SignUp = () => {
             id: 3,
             name: "password",
             type: "password",
-            placeholder: "Password",
+            placeholder: "Пароль",
             errorMessage:
-                "Password should be 8-20 characters and include at least 1 letter, 1 number!",
-            label: "Password",
+                "Пароль должен состоять из 8-20 символов и содержать как минимум 1 букву, 1 цифру!",
+            label: "Пароль",
             pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,20}$`,
             required: true,
         },
@@ -47,9 +47,9 @@ const SignUp = () => {
             id: 4,
             name: "confirmPassword",
             type: "password",
-            placeholder: "Confirm Password",
-            errorMessage: "Passwords don't match!",
-            label: "Confirm Password",
+            placeholder: "Повторите пароль",
+            errorMessage: "Неверный пароль!",
+            label: "Повторите пароль",
             pattern: values.password,
             required: true,
         },
@@ -64,9 +64,9 @@ const SignUp = () => {
     };
 
     return (
-        <div className="app">
+        <div className="sign-up-app">
             <form className="sign-up-form" onSubmit={handleSubmit}>
-                <h1 className="sign-up-h1">Sign up</h1>
+                <h1 className="sign-up-h1">Регистрация</h1>
                 {inputs.map((input) => (
                     <FormInput
                         key={input.id}
@@ -75,9 +75,9 @@ const SignUp = () => {
                         onChange={onChange}
                     />
                 ))}
-                <button className="sign-up-btn">Submit</button>
+                <button className="sign-up-btn">Зарегистрироваться</button>
                 <div className="accept-terms-condition">
-                    By clicking Submit, you agree on our <Link to="/terms-and-condition" className="terms-condition-link">terms and condition</Link>
+                    Нажимая на кнопку вы соглашаетесь с<br/> <Link to="/terms-and-condition" className="terms-condition-link">условиями использования</Link>
                 </div>
             </form>
         </div>

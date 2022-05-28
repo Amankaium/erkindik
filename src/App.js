@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {Homepage, Artists, Artworks, SignIn, Pricing, SignUp, SearchPage, SellArt, ForgotPassword, TermsCon, Profile} from './pages';
+import {Homepage, Artists, SignIn, SignUp, SearchPage, TermsCon} from './pages';
 import Header from './components/Header/Header';
 import About from './pages/Artists/About';
 import Info from './pages/Artists/Info';
@@ -11,31 +11,31 @@ import Footer from './components/Footer/Footer';
 
 
 
+ export const LoginContext = React.createContext(false)
 
 function App() {
+  const [loginState, setLoginState] = useState(false)
+  const [token, setToken] = useState("")
 
   return (
+    <LoginContext.Provider value={loginState}>
     <Router>
-      <Header />
+      <Header setLoginState={setLoginState} setToken={setToken}/>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/artworks" element={<Artworks />} />
         <Route exact path="/artists" element={<Artists />} />
-        <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/artists/about" element={<About />} />
         <Route exact path="/artists/about/info" element={<Info />} />
         <Route exact path="/artists/about/work" element={<Work />} />
-        <Route exact path="/pricing" element={<Pricing />} />
-        <Route exact path="/sell-art" element={<SellArt />} />
         <Route exact path="/search" element={<SearchPage />} />
         <Route exact path="/artInfo" element={<ArtInfo />} />
-        <Route exact path="/login" element={<SignIn />} />
+        <Route exact path="/login" element={<SignIn setLoginState={setLoginState} setToken={setToken}/>} />
         <Route exact path="/register" element={<SignUp />} />
-        <Route exact path="/forgot-password" element={<ForgotPassword />} />
         <Route exact path="/terms-and-condition" element={<TermsCon />} />
       </Routes>
       <Footer />
     </Router>
+    </LoginContext.Provider>
   );
 }
 
