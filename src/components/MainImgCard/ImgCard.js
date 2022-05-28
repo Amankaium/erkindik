@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export default function ImgCard (props) {
     const {image, className} = props
     return (
-    <Link to="/artInfo" className={className}>
-        <img src={image.img_url}/>
+    <Link to="/artInfo">
+        <img src={image.img_url} className={className}/>
         <p className="list-txt">
             <div>
                 <p  align="left" className="artistName">{image.author.name}</p>

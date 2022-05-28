@@ -62,30 +62,53 @@ p {
 }
 
 
+.list-card {
+    padding: 3% 0;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1% 0;
+} 
+.list-h1 {
+    padding: 20px 0;
+}
+
 
 .homepage2 {
     padding: 5%;
 }
-
+.img-0 {
+    height: 540px;
+    width: 500px;
+}
 .img-1 {
-    height: 440px;
+    height: 540px;
+    width: 1027px;
 }
 .img-2 {
-    width: 330px;  
+    width: 360px;  
 }
+
 .img-3 {
-    height: 400px;
-    width: 680px;  
+    width: 280px;  
 }
 .img-4 {
-    width: 448px;  
+    height: 400px;
+    width: 730px;  
+}
+.img-5 {
+    width: 476px;  
 }
 
 .submit-conteiner {
     display: flex;
+    padding-top: 93px;
 }
 .sc-txt {
     line-height: 1;
+    padding: 180px 37px 0px 0px;
 }
 h2 {
     font-size: 32px;
@@ -98,6 +121,4 @@ h2, .sc-desc {
     width: 920px;
     background: url("https://ik.imagekit.io/theartling/prod/dynamic_images/Image/17d6461ec2604ec4bb9f871964e54643.jpeg?tr=,w-920"), center / cover;
 }
-.img-5 {
-    height: 260px;
-}
+
