@@ -15,22 +15,34 @@ header {
 .header-a{
     padding: 0 38px 0px 0px;
 }
-.header-a, .header-signup{
+.header-a, .header-signup, .header-change{
     font-size: 19px;
     margin-top: 17px;
 } 
- .header-register{
+ .header-register, .header-profile, .header-logout{
     border: 1px solid #767676;
     border-radius: 3px;
     padding: 16px 13px;
     height: 52px;
 }
 
-.header-register:hover {
+.logout-btn {
+    color: #767676;
+    font-size: 19px;
+    border: none;
+}
+
+.logout-btn:hover {
+    color: black; 
+}
+
+.header-register:hover,
+.header-profile:hover,
+.header-logout:hover {
     border: 1px solid black;
     color: black;
 } 
-.header-signup {
+.header-signup, .header-change {
     display: flex;
 }
 span {

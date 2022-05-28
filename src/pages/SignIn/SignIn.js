@@ -1,31 +1,33 @@
-import React, { useReducer, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./SignIn.css";
 import FormInput from "../../components/FormInput/FormInput";
-import { Link } from "react-router-dom";
+import { Link, Navigate} from "react-router-dom";
 import axios from "axios";
+import { LoginContext } from "../../App";
 
-const SignIn = ({userTokenUpdate}) => {
+const SignIn = ({setToken, setLoginState}) => {
+
+  const login = useContext(LoginContext)
+
   const [values, setValues] = useState({
-    email: "",
+    username: "",
     password: "",
   });
-
-  const [token, setToken] = useState()
 
   const inputs = [
     {
       id: 1,
-      name: "email",
-      type: "email",
-      placeholder: "Email",
-      label: "Email",
+      name: "username",
+      type: "text",
+      placeholder: "Логин",
+      label: "Логин",
     },
     {
       id: 2,
       name: "password",
       type: "password",
-      placeholder: "Password",
-      label: "Password",
+      placeholder: "Пароль",
+      label: "Пароль",
     },
   ];
 
@@ -34,14 +36,17 @@ const SignIn = ({userTokenUpdate}) => {
 
     axios({
       method: 'post',
-      url: 'http://kaiaman.pythonanywhere.com/admin/auth/user/',
+      url: 'http://kaiaman.pythonanywhere.com/api/login',
       data: {
-        email: values.email,
+        username: values.username,
         password: values.password
       }
-    }).then (({key}) => {
-      console.log(key)
-      userTokenUpdate(key)
+    }).then (({data}) => {
+      const token = data.key
+      console.log(token)
+      setToken(token)
+      setLoginState(true)
+      console.log(login)
     })
   };
 
@@ -53,9 +58,12 @@ const SignIn = ({userTokenUpdate}) => {
   };
 
   return (
-    <div className="app">
+
+
+    <div className="sign-in-app">
+      {login ? (<Navigate to="/" />) : (
       <form className="sign-in-form" onSubmit={handleSubmit}>
-        <h1 className="sign-in-h1">Sign in</h1>
+        <h1 className="sign-in-h1">Войти</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -64,12 +72,13 @@ const SignIn = ({userTokenUpdate}) => {
             onChange={onChange}
           />
         ))}
-        <Link to="/forgot-password" className="forgot-pass-link">Forgot password?</Link>
-        <button className="sign-in-btn">Sign in</button>
+        <Link to="/forgot-password" className="forgot-pass-link">Забыли пароль?</Link>
+        <button className="sign-in-btn">Войти</button>
         <div className="sign-up-link">
-          <Link to="/register" className="sign-up">Create account</Link>
+          <Link to="/register" className="sign-up">Регистрация</Link>
         </div>
       </form>
+      )}
     </div>
   );
 };
