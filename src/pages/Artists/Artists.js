@@ -85,7 +85,7 @@ function Artists() {
     <div className='artists'>
       <h1>Начните искать художников с</h1>
       <div className="artist-links">
-                <div  className="artist-a"><LinkA href="/">А</LinkA></div>
+                <div  className="artist-a"><LinkA href="/artists/about">А</LinkA></div>
                 <div  className="artist-a"><LinkA href="/">Б</LinkA></div>
                 <div  className="artist-a"><LinkA href="/">В</LinkA></div>
                 <div  className="artist-a"><LinkA href="/">Г</LinkA></div>
@@ -113,41 +113,41 @@ function Artists() {
         <div className='artists__wrapper'>
           <ul className='artists__items'>
             <ArtistItem
-              src='https://bluethumb.com.au/blog/wp-content/uploads/2020/01/Ben-Tankard-scaled.jpg'
-              text='John Snow - 26 works'
-              label='Adventure'
+              src='https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/JUusA7kPyqi6Dl43q98sYpvL6x4=/400x225/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/W26WJFOMAY423OCZWULIRBXKWQ.jpg'
+              text='Альфи М - 6 картин'
+              label='Портрет'
               path='/artists/about'
             />
             <ArtistItem
-              src='https://bluethumb.com.au/blog/wp-content/uploads/2020/01/Ben-Tankard-scaled.jpg'
-              text='John Snow - 26 works'
-              label='Luxury'
+              src='https://goodbye-office.com/wp-content/uploads/2019/08/Snimok_ekrana_2019-07-31_v_12_54_22.png'
+              text='Владимир Владимирович - 10 картин'
+              label='Мифологический'
               path='/artists/about'
             />
              <ArtistItem
-              src='https://bluethumb.com.au/blog/wp-content/uploads/2020/01/Ben-Tankard-scaled.jpg'
-              text='John Snow - 26 works'
-              label='Luxury'
+              src='https://www.arts.ac.uk/__data/assets/image/0024/105297/DSC_7556.jpg'
+              text='Айдана Айдинова - 23 картин'
+              label='Бытовой'
               path='/artists/about'
             />
           </ul>
           <ul className='artists__items'>
             <ArtistItem
-              src='https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2019/10/Wushuang-Tong-Studio-Shot-1-scaled.jpg?fit=2560%2C1707&ssl=1'
-              text='John Snow - 26 works'
-              label='Mystery'
+              src='https://jazzconnective.eu/media/cache/f3/90/f3906cd8ead96bbc04714ee3df40a2de.jpg'
+              text='Асель Асылбек - 25 картин'
+              label='Исторический'
               path='/artists/about'
             />
             <ArtistItem
-              src='https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2019/10/Wushuang-Tong-Studio-Shot-1-scaled.jpg?fit=2560%2C1707&ssl=1'
-              text='John Snow - 26 works'
-              label='Adventure'
+              src='https://api.time.com/wp-content/uploads/2021/09/nft-art-teens-1.jpg?quality=85&w=2400'
+              text='Ким Ли - 22 картин'
+              label='Пейзаж'
               path='/artists/about'
             />
             <ArtistItem
-              src='https://i0.wp.com/artplugged.co.uk/wp-content/uploads/2019/10/Wushuang-Tong-Studio-Shot-1-scaled.jpg?fit=2560%2C1707&ssl=1'
-              text='John Snow - 26 works'
-              label='Adrenaline'
+              src='https://news.artnet.com/app/news-upload/2018/11/IMG_3498-e1543854475168.jpg'
+              text='Руслан Азизов - 26 картин'
+              label='Натьюрморт'
               path='/artists/about'
             />
           </ul>
