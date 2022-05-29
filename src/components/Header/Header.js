@@ -1,14 +1,24 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Logo from '../Logo/Logo';
 import './Header.css';
 import '../../App'
 import LinkA from '../Link/Link';
+import { LoginContext } from '../../App';
 
-function Header() {
+function Header({setLoginState, setToken}) {
+
+  const login = useContext(LoginContext)
+  console.log(login)
+
+  function logOut() {
+    setLoginState(false)
+    setToken("")
+  }
+
   return (
     <header>
       <div className='header-logo'>
-        <a href='/'><Logo/></a>
+        <LinkA href='/'><Logo/></LinkA>
       </div>
       <div className='header-links'>
         <div className='header-a'><LinkA href="/" >Произведения искусства</LinkA></div>
@@ -16,11 +26,15 @@ function Header() {
         <div className='header-a'><LinkA href="/" className='header-a'>Цены</LinkA></div>
         <div className='header-a'><LinkA href="/" className='header-a'>О нас</LinkA></div>
       </div>
-      <div className='header-signup'>
-        <div className='header-register'><strong><LinkA href = "/">Вход</LinkA></strong></div>
+      {login ? (<div className='header-change'>
+        <div className='header-profile'><strong><LinkA href = "/artists/about">Личный кабинет</LinkA></strong></div>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <div className='header-register'><strong><LinkA href = "/"> Регистрация</LinkA></strong></div>
-      </div>
+          <div className='header-logout'><button className='logout-btn' onClick={logOut}> Выйти</button></div>
+      </div>) : (<div className='header-signup'>
+        <div className='header-register'><strong><LinkA href = "/login">Вход</LinkA></strong></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <div className='header-register'><strong><LinkA href = "/register"> Регистрация</LinkA></strong></div>
+      </div>)}
     </header>
   )
 }

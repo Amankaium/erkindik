@@ -12,18 +12,35 @@ a {
 strong {
     color: #767676;
 }
-input{
-    font-size: 16px;
-    border-radius: 4px;
-    background-color: white;
-    padding: 10px 10px;
-    width: 75%;
-}
 p {
     color: black;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+.input{
+    font-size: 16px;
+    width: 700px;
+    height: 50px;
+    margin: 15px -5px;
+}
+.input, .button {
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+}
+.button {
+    width: 40px;
+}
+.svg {
+    padding-right: 4px;
+    width: 30px;
+}
+.img-form{
+    display: flex;
+}
 
+.img-form, .mini-txt {
+    padding-left: 32%;
+}
 .homepage1 {
     height: 600px;
     width: 100vw;
@@ -43,15 +60,7 @@ p {
     padding: 0% 22% 1% 0;
 
 }
-.img-form, .mini-txt {
-    padding-left: 32%;
-}
 
-
-
-.homepage2 {
-    padding: 5%;
-}
 
 .list-card {
     padding: 3% 0;
@@ -61,41 +70,55 @@ p {
     justify-content: center;
     gap: 20px;
     padding: 1% 0;
+} 
+.list-h1 {
+    padding: 20px 0;
+}
+
+
+.homepage2 {
+    padding: 5%;
+}
+.img-0 {
+    height: 540px;
+    width: 500px;
 }
 .img-1 {
-    height: 440px;
+    height: 540px;
+    width: 1027px;
 }
 .img-2 {
-    width: 330px;  
+    width: 360px;  
 }
+
 .img-3 {
-    height: 400px;
-    width: 680px;  
+    width: 280px;  
 }
 .img-4 {
-    width: 448px;  
+    height: 400px;
+    width: 730px;  
+}
+.img-5 {
+    width: 476px;  
 }
 
 .submit-conteiner {
     display: flex;
-    /* margin: 0px 60px 0px 0px; */
+    padding-top: 93px;
 }
 .sc-txt {
     line-height: 1;
-    /* padding: 180px 0px 0px 0; */
+    padding: 180px 37px 0px 0px;
 }
 h2 {
     font-size: 32px;
 }
 h2, .sc-desc {
     text-align: center;
-    /* padding-right: 60px; */
 }
 .sc-img {
     height: 488px;
     width: 920px;
     background: url("https://ik.imagekit.io/theartling/prod/dynamic_images/Image/17d6461ec2604ec4bb9f871964e54643.jpeg?tr=,w-920"), center / cover;
 }
-.img-5 {
-    height: 260px;
-}
+
