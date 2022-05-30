@@ -1,0 +1,129 @@
+
+.author-header {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(172, 169, 171, 0.46), rgba(68, 67, 67, 0.45)),
+    url(./backpic.jpeg), center / cover;
+}
+.user-box {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: flex-start; */
+}
+.user-name {
+    text-align: center;
+    margin-top: 260px;
+    color:black;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+.user-name:hover {
+    color:rgb(145, 137, 137);
+    -webkit-text-shadow: 2px 2px 2px rgb(177, 171, 171);
+    -moz-text-shadow: 2px 2px 2px rgb(177, 171, 171);
+        text-shadow: 2px 2px 2px rgb(177, 171, 171);
+}
+.artist-name {
+    margin-top: 25px;
+    font-size: 50px;
+    transition: 3s;
+    text-align: center;
+}
+.artist-name:hover {
+    transform: scale(1.2);
+}
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin-top: 50px;
+}
+.picture {
+    width: 50%;
+    height: 400px;
+}
+
+
+.info-cont {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.paint-name {
+    font-size: 40px;
+    font-family: ui-sans-serif;
+}
+.info-hr {
+    width: 100%;
+    margin-top: 10px;
+}
+.picture-cont {
+    margin-top: 30px;
+}
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.price {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buy-now {
+    background-color: #fff;
+    color: #48ae65;
+    border: 3px solid #48ae65;
+    padding: 12px;
+    font-size: 20px;
+}
+.buy-now:hover {
+    background-color: #48ae65;
+    color:#fff;
+    border-radius: 5px;
+}
+.otherworks {
+    display: grid;
+    grid-auto-rows: 80px 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-items: stretch;
+    margin-top: 100px;
+}
+.other-work-text {
+    font-size: 30px;
+    margin-left: 27px;
+}
+.works-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+.author-name {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.instruct-text {
+    font-size: 18px;
+    font-family:sans-serif;
+}

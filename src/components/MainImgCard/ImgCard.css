@@ -1,0 +1,14 @@
+.fav-icon {
+    height: 20px;
+}
+.artName {
+    font-size: 17px;
+    color: #767676;
+}
+.list-txt {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font:  24px/34px Helvetica, Sans-Serif;
+}
+

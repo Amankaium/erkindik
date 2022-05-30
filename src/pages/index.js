@@ -1,11 +1,9 @@
 import Artists from './Artists/Artists';
-import Artworks from './Artworks/Artworks';
 import Homepage from './Homepage/Homepage';
-import Login from './Login/Login';
-import Pricing from './Pricing/Pricing';
-import Register from './Register/Register';
+import SignIn from './SignIn/SignIn';
+import SignUp from './SignUp/SignUp';
 import SearchPage from './SearchPage/SearchPage';
-import SellArt from './SellArt/SellArt';
+import TermsCon from './TermsAndCondition/TermsCon';
 
 
-export {Artists, Artworks, Homepage, Login, Pricing, Register, SearchPage, SellArt};
+export {Artists, Homepage, SignIn, SignUp, SearchPage, TermsCon};

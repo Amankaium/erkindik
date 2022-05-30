@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Rubik:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.left,
+.right {
+    width: 50%;
+    position: relative;
+}
+
+
+.flex {
+    display: flex;
+
+}
+
+.topMarign{
+    margin-top: 50px;
+}
+
+.artist-links {
+    display: flex;
+    margin-top: 20px;
+}
+.artist-a {
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px 24px ;
+    border: 1px solid #767676;
+    border-radius: 5%;
+    color: #767676;
+}
+.artist-a:hover {
+    color: black;
+    border-color: black;
+}
+.list {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: #2196F3;
+}
+
+
+.aboutartist {
+    height:200vh;
+
+}
+
+/* .aboutartist .img {
+    height: 90vh;
+    width: 50%;
+} */
+
+
+ .aboutartist .img {
+    height: 0vh;
+    width: 80%;
+    position: relative;
+  } 
+  .aboutartist img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150vh;
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1.1);
+  }
+  .aboutartist h1 {
+    font-size: 60px;
+  }
+  .SocailIcon i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .SocailIcon i:hover {
+    color: #fff;
+  }
+.faFacebook {
+    color: #4267b2;
+    border: 1px solid #4267b2;
+  }
+  .facebook:hover {
+    background: #4267b2;
+  }
+  .instagram {
+    color: #dc2743;
+    border: 1px solid #dc2743;
+  }
+  .instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+  .twitter {
+    color: #38a1f3;
+    border: 1px solid #38a1f3;
+  }
+  .twitter:hover {
+    background-color: #38a1f3;
+  }
+  .youtube {
+    color: #e92525;
+    border: 1px solid #e92525;
+  }
+  .youtube:hover {
+    background-color: #e92525;
+  }
+  .pinterest {
+    color: #c8232c;
+    border: 1px solid #c8232c;
+  }
+  .pinterest:hover {
+    background-color: #c8232c;
+  }
+  .dribbble {
+    color: #ee72a2;
+    border: 1px solid #ee72a2;
+  }
+  .dribbble:hover {
+    background-color: #ee72a2;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .primary-btn {
+    padding: 15px 40px;
+    background: #38d16a;
+  }
+  .primary-btn:hover {
+    background: #f54ea2;
+    box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+  }
+  .aboutartist .right {
+    margin-top: 15%;
+  }
+  .aboutartist .SocailIcon {
+    margin: 30px 0;
+  }
+  .aboutartist p {
+    margin-bottom: 20px;
+  }
+  p {
+    color: #6185a5;
+    line-height: 30px;
+  }
+
+
+
+  
