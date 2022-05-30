@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 import FormInput from "../../components/FormInput/FormInput";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import axios from "axios";
 
 const SignUp = () => {
     const [values, setValues] = useState({
@@ -10,6 +11,8 @@ const SignUp = () => {
         password: "",
         confirmPassword: "",
     });
+
+    const [success, setSuccess] = useState(false)
 
     const inputs = [
         {
@@ -57,6 +60,19 @@ const SignUp = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        axios.post('http://kaiaman.pythonanywhere.com/api/registration', {
+            username: values.username,
+            email: values.email,
+            password: values.password
+          })
+          .then(response => { 
+            if(response.status === 201) {
+                setSuccess(true)
+            }})
+          .catch(error => {
+            console.log(error);
+          });
     };
 
     const onChange = (e) => {
@@ -64,22 +80,24 @@ const SignUp = () => {
     };
 
     return (
+
         <div className="sign-up-app">
-            <form className="sign-up-form" onSubmit={handleSubmit}>
-                <h1 className="sign-up-h1">Регистрация</h1>
-                {inputs.map((input) => (
-                    <FormInput
-                        key={input.id}
-                        {...input}
-                        value={values[input.name]}
-                        onChange={onChange}
-                    />
-                ))}
-                <button className="sign-up-btn">Зарегистрироваться</button>
-                <div className="accept-terms-condition">
-                    Нажимая на кнопку вы соглашаетесь с<br/> <Link to="/terms-and-condition" className="terms-condition-link">условиями использования</Link>
-                </div>
-            </form>
+            {success ? (<Navigate to="/login" />) : 
+            ( <form className="sign-up-form" onSubmit={handleSubmit}>
+            <h1 className="sign-up-h1">Регистрация</h1>
+            {inputs.map((input) => (
+                <FormInput
+                    key={input.id}
+                    {...input}
+                    value={values[input.name]}
+                    onChange={onChange}
+                />
+            ))}
+            <button className="sign-up-btn" >Зарегистрироваться</button>
+            <div className="accept-terms-condition">
+                Нажимая на кнопку вы соглашаетесь с<br/> <Link to="/terms-and-condition" className="terms-condition-link">условиями использования</Link>
+            </div>
+        </form>)} 
         </div>
     );
 };

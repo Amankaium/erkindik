@@ -25,11 +25,11 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/artists" element={<Artists />} />
-        <Route exact path="/artists/about" element={<About />} />
-        <Route exact path="/artists/about/info" element={<Info />} />
-        <Route exact path="/artists/about/work" element={<Work />} />
+        <Route exact path="/artists/about" element={<About setLoginState={setLoginState} setToken={setToken}/>} />
+        <Route exact path="/artists/about/info" element={<Info setLoginState={setLoginState} setToken={setToken}/>} />
+        <Route exact path="/artists/about/work" element={<Work setLoginState={setLoginState} setToken={setToken}/>} />
         <Route exact path="/search" element={<SearchPage />} />
-        <Route exact path="/artInfo" element={<ArtInfo />} />
+        <Route exact path="/artInfo" element={<ArtInfo setLoginState={setLoginState} setToken={setToken}/>} />
         <Route exact path="/login" element={<SignIn setLoginState={setLoginState} setToken={setToken}/>} />
         <Route exact path="/register" element={<SignUp />} />
         <Route exact path="/terms-and-condition" element={<TermsCon />} />
