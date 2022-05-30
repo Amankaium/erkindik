@@ -5,7 +5,6 @@ import {Homepage, Artists, SignIn, SignUp, Search, TermsCon} from './pages';
 import Header from './components/Header/Header';
 import About from './pages/Artists/About';
 import Info from './pages/Artists/Info';
-import EditProfile from './pages/EditProfile/EditProfile';
 import Work from './pages/Artists/Work';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
@@ -25,7 +24,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/artists" element={<Artists />} />
-        <Route exact path="/artists" element={<EditProfile />} />
         <Route exact path="/artists/about" element={<About />} />
         <Route exact path="/artists/about/info" element={<Info />} />
         <Route exact path="/artists/about/work" element={<Work />} />
