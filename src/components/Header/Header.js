@@ -4,15 +4,19 @@ import './Header.css';
 import '../../App'
 import LinkA from '../Link/Link';
 import { LoginContext } from '../../App';
+import {useNavigate} from "react-router-dom"
 
 function Header({setLoginState, setToken}) {
 
   const login = useContext(LoginContext)
   console.log(login)
 
+
+  const nav = useNavigate()
   function logOut() {
     setLoginState(false)
     setToken("")
+    nav("/login")
   }
 
   return (
