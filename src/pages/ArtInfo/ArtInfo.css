@@ -60,9 +60,10 @@
     align-content: flex-start;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 30px;
 }
 .paint-name {
-    font-size: 40px;
+    font-size: 30px;
     font-family: ui-sans-serif;
 }
 .info-hr {
@@ -92,6 +93,8 @@
     border: 3px solid #48ae65;
     padding: 12px;
     font-size: 20px;
+    width:230px;
+    margin-top: 15px;
 }
 .buy-now:hover {
     background-color: #48ae65;
@@ -104,7 +107,7 @@
     align-content: center;
     align-items: center;
     justify-items: stretch;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .other-work-text {
     font-size: 30px;
@@ -124,6 +127,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .instruct-text {
-    font-size: 18px;
+    font-size: 15px;
     font-family:sans-serif;
 }

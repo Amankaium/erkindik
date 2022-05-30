@@ -10,15 +10,15 @@
     height: 67px;
     width: 220px;
     padding: 23px 25px;
-    border: 1px solid #767676;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 .category-two {
-    padding: 18px 25px;
+    padding: 25px;
 }
 .homepage-a :hover {
-    color: black;
-    border-color: black;
+    color: #767676;
+    font-size: 19px;
 }
 .homepage-all-category {
     text-align: center;

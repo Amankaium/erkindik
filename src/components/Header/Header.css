@@ -3,7 +3,7 @@ header {
     display: flex;
     padding: 10px 30px;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     background-color: rgb(255, 255, 255);
     height: 94px;
     width: 100vw;
@@ -16,7 +16,7 @@ header {
     padding: 0 38px 0px 0px;
 }
 .header-a, .header-signup, .header-change{
-    font-size: 19px;
+    font-size: 21px;
     margin-top: 17px;
 } 
  .header-register, .header-profile, .header-logout{
