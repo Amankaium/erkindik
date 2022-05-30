@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./EditProfile.css";
-import ProfileInput from "../../components/ProfileInput/ProfileInput";
 
 function EditProfile() {
 
@@ -77,7 +74,7 @@ function EditProfile() {
             <div className="edit-profile">
                 <h3>Edit Profile</h3>
             {inputs.map((input) => (
-                    <ProfileInput
+                    <input
                         key={input.id}
                         {...input}
                         value={values[input.name]}
