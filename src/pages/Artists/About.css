@@ -59,7 +59,7 @@ body {
 
 
 .aboutartist {
-    height:200vh;
+    height:110vh;
 
 }
 
@@ -99,46 +99,53 @@ body {
   .SocailIcon i:hover {
     color: #fff;
   }
-.faFacebook {
+.fa-facebook {
     color: #4267b2;
     border: 1px solid #4267b2;
   }
-  .facebook:hover {
+  .fa-facebook:hover {
     background: #4267b2;
   }
-  .instagram {
+  .fa-telegram {
+    color: #4267b2;
+    border: 1px solid #4267b2;
+  }
+  .fa-telegram:hover {
+    background: #4267b2;
+  }
+  .fa-instagram {
     color: #dc2743;
     border: 1px solid #dc2743;
   }
-  .instagram:hover {
+  .fa-instagram:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   }
-  .twitter {
+  .fa-twitter {
     color: #38a1f3;
     border: 1px solid #38a1f3;
   }
-  .twitter:hover {
+  .fa-twitter:hover {
     background-color: #38a1f3;
   }
-  .youtube {
+  .fa-youtube {
     color: #e92525;
     border: 1px solid #e92525;
   }
-  .youtube:hover {
+  .fa-youtube:hover {
     background-color: #e92525;
   }
-  .pinterest {
+  .fa-pinterest {
     color: #c8232c;
     border: 1px solid #c8232c;
   }
-  .pinterest:hover {
+  .fa-pinterest:hover {
     background-color: #c8232c;
   }
-  .dribbble {
+  .fa-dribbble {
     color: #ee72a2;
     border: 1px solid #ee72a2;
   }
-  .dribbble:hover {
+  .fa-dribbble:hover {
     background-color: #ee72a2;
   }
   button {
@@ -175,5 +182,26 @@ body {
   }
 
 
-
+  .last-btn {
+    margin-bottom: 100px;
+    width:300px;
+    position:relative;
+    left: 33rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
   
+  .last-btn {
+    padding: 15px 40px;
+    background: #38d16a;
+  }
+  .last-btn:hover {
+    background: #f54ea2;
+    box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+  }
