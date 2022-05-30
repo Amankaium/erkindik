@@ -10,13 +10,13 @@ function Footer() {
             <br/>
             <div className='footer-fisrt-box'>
                 <div className='footer-nav'>
-                    <div className='footer-link'><LinkA href = "/">Учетная запись</LinkA></div>
-                    <div className='footer-link'><LinkA href = "/">Художники</LinkA></div>
-                    <div className='footer-link'><LinkA href = "/">Условия использования</LinkA></div>
+                    <div className='footer-link'><LinkA href = "/ArtInfo">Произведения искусства</LinkA></div>
+                    <div className='footer-link'><LinkA href = "/Artists">Художники</LinkA></div>
+                    <div className='footer-link'><LinkA href = "/login">Добавить картину</LinkA></div>
                     <div className='footer-logo'><Logo/></div>
-                    <div className='footer-link'><LinkA href = "/">Произведения искусства </LinkA></div>
+                    <div className='footer-link'><LinkA href = "/Search">Найти картину </LinkA></div>
                     <div className='footer-link'><LinkA href = "/">О нас</LinkA></div>
-                    <div className='footer-link'><LinkA href = "/">Социальные сети</LinkA></div>
+                    <div className='footer-link'><LinkA href = "/terms-and-condition ">Условия использования</LinkA></div>
                 </div>
                     <div className='footer-border'/>
             </div>
