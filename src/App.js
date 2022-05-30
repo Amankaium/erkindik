@@ -10,7 +10,6 @@ import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
 
 
-
  export const LoginContext = React.createContext(false)
 
 function App() {
