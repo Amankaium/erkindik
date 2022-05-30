@@ -42,13 +42,15 @@ h4 {
   color: #1ec21e;
 }
 .formdesign {
-  max-width: 737px;
+  max-width: 650px;
+  max-height: 550px;
   margin: 0 auto;
   border: 3px solid #07a8ff;
   border-radius: 15px;
   padding: 97px 67px 97px 67px;
   background-color: #e7f7ff;
-  box-shadow: 11px -4px 18px 0px #cae7f4; 
+  box-shadow: 11px -4px 18px 0px #cae7f4;
+  margin-bottom: 100px; 
 }
 .formdesign label {
   text-align: center;
@@ -64,6 +66,9 @@ h4 {
   padding: 13px;
   margin-left: 17px;
   font-family: 'Inter', sans-serif;
+}
+.input.form-row {
+  margin: 30px;
 }
 .btn.btn-dark {
   font-size: 27px;

@@ -3,7 +3,7 @@ header {
     display: flex;
     padding: 10px 30px;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     background-color: rgb(255, 255, 255);
     height: 94px;
     width: 100vw;
