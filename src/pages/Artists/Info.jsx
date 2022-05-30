@@ -8,9 +8,9 @@ const Info = () => {
   const data = [
     {
       title: "Кто Я и Чем Я Занимаюсь",
-      desc1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero.",
-      desc2: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-      desc3: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      desc1: "Привет! Меня зовут Альфи:) Все к чему прикасаюсь можно с интересом и долго рассматривать))) это моя стихия, взять впечатление, поймать эмоцию и пропустив через себя выплеснуть красками и линиями на ткань, холст, бумагу или другую жертву моего творческого зуда)",
+      desc2: "Люблю рисовать пастелью, которая совсем недавно меня взяла в плен….",
+      desc3: "Еще, я пишу картины на ткани. Профессионально занимаюсь батиком уже довольно долгое время.",
       cover: "../../assets/artist2.jpg",
     },
   ]
