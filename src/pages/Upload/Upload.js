@@ -1,6 +1,7 @@
 import React,{useState } from 'react';
 import axios from 'axios';
-import './App.css';
+import './Upload.css';
+
 
 function App() {
 
@@ -18,13 +19,13 @@ function App() {
 
   }
 
-  const [isSucces, setSuccess] = useState(null);
+  const [isSuccess, setSuccess] = useState(null);
 
   const submit = async () =>{
     const formdata = new FormData(); 
     formdata.append('avatar', userInfo.file);
 
-    axios.post("http://localhost:8080/imageupload", formdata,{   
+    axios.post("http://localhost:8080/imageupload", formdata,{
             headers: { "Content-Type": "multipart/form-data" } 
     })
     .then(res => { // then print response status
@@ -38,17 +39,17 @@ function App() {
 
   return (
     <div className="container mr-60">
-      <h3 className="text-white">React Image Upload And Preview Using Node Js - <span> codeat21.com </span> </h3>
+      <h3 className="text-white"> Загрузите свои изображения </h3>
 
       <div className="formdesign">
-      {isSucces !== null ? <h4> {isSucces} </h4> :null }
+      {isSuccess !== null ? <h4> {isSuccess} </h4> :null }
         <div className="form-row">
-          <label className="text-white">Select Image :</label>
+          <label className="text-white">Выбрать :</label>
           <input type="file" className="form-control" name="upload_file"  onChange={handleInputChange} />
         </div>
 
         <div className="form-row">
-          <button type="submit" className="btn btn-dark" onClick={()=>submit()} > Save </button>
+          <button type="submit" className="btn btn-dark" onClick={()=>submit()} > Сохранить </button>
           
         </div>
       </div>
