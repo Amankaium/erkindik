@@ -1,84 +1,38 @@
-// import React from "react";
-// import "./Artists.css"
 
-
-
-// function Artists() {
-//     return (
-//         // <div>
-//         //     Here is Artists!
-//         // </div>
-
-//         <section>
-//             <ul>
-//                 <li class="list active" data-filter="Search for artists starting with" href="/">Search for artists starting with</li>
-                // <li class="list" data-filter="a">A</li>
-                // <li class="list" data-filter="b">B</li>
-                // <li class="list" data-filter="c">C</li>
-                // <li class="list" data-filter="d">D</li>
-                // <li class="list" data-filter="e">E</li>
-                // <li class="list" data-filter="f">F</li>
-                // <li class="list" data-filter="g">G</li>
-                // <li class="list" data-filter="h">H</li>
-                // <li class="list" data-filter="i">I</li>
-                // <li class="list" data-filter="g">G</li>
-                // <li class="list" data-filter="k">K</li>
-                // <li class="list" data-filter="l">L</li>
-                // <li class="list" data-filter="m">M</li>
-//             </ul>
-//             <div class="product">
-//                 <div class="itemBox" data-item="a"><img src="https://news.artnet.com/app/news-upload/2019/09/GettyImages-1157348492-1024x683.jpg"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 {/* <span>27 Artworks</span> */}
-//                 <div class="itemBox" data-item="b"><img src="https://middle-east-online.com/sites/default/files/styles/home_special_coverage_1920xauto/public/2019-12/eritart.jpg?itok=bp6HBHx2"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 {/* <span>27 Artworks</span> */}
-//                 <div class="itemBox" data-item="c"><img src="https://www.agora-gallery.com/advice/wp-content/uploads/Artist-in-quarantine.jpg"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 {/* <span>27 Artworks</span> */}
-//                 <div class="itemBox" data-item="d"><img src="https://api.time.com/wp-content/uploads/2021/09/nft-art-teens-1.jpg?quality=85&w=2400"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 {/* <span>27 Artworks</span> */}
-//                 <div class="itemBox" data-item="a"><img src="https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cmetadata=none%2Conerror=redirect%2Cq=85%2Cwidth=968/wp-content/uploads/international-artists-day1-e1571734375351.jpg"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 <div class="itemBox" data-item="a"><img src="https://artgalleryofmississauga.com/wp-content/uploads/2021/07/annie-spratt-ejoT2wOeHDY-unsplash.jpg"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//                 <div class="itemBox" data-item="a"><img src="https://bluethumb.com.au/blog/wp-content/uploads/2020/01/Ben-Tankard-scaled.jpg"></img> </div>
-//                 {/* <div> Annejole Jacobs-de Jongh (Jole)</div>
-//                 <span>Rotterdam, The Netherlands</span> */}
-//                 <br></br>
-//             </div>
-//         </section>
-
-//     )
-// }
-
-// export default Artists;
-
-
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './Artists.css';
 import ArtistItem from './ArtistItem';
 import About from './About'
 import LinkA from "../../components/Link/Link";
+import { ThemeContext } from '@emotion/react';
+import axios from 'axios';
 
 
 
 function Artists() {
+  const [users, setUsers] = React.useState({
+    user: {username: ""},
+    description: "",
+    name:{name: ""},
+    genre: "",
+  })
+  function getArtist () {
+    axios.get ("https://kaiaman.pythonanywhere.com/api/erkindik/artists/1"
+
+    ).then(response => {
+      console.log(response.data)
+      setUsers(response.data)
+    }
+    )
+    .catch((err) => console.log(err))
+  }
+
+  useEffect(getArtist, [])
+
+
+
+
   return (
   
 
@@ -114,13 +68,19 @@ function Artists() {
           <ul className='artists__items'>
             <ArtistItem
               src='https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/JUusA7kPyqi6Dl43q98sYpvL6x4=/400x225/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/W26WJFOMAY423OCZWULIRBXKWQ.jpg'
-              text='Альфи М - 6 картин'
+              text= {users.user.username}
+              name={users.name}
+              description= {users.description}
+              genre={users.genre}
               label='Портрет'
               path='/artists/about'
             />
+            
             <ArtistItem
               src='https://goodbye-office.com/wp-content/uploads/2019/08/Snimok_ekrana_2019-07-31_v_12_54_22.png'
-              text='Владимир Владимирович - 10 картин'
+              text='Владимир Владимирович - 23 картин'
+              // description="10 картин"
+              genre="Кыргызстан, Ош"
               label='Мифологический'
               path='/artists/about'
             />

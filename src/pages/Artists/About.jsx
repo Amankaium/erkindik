@@ -6,6 +6,8 @@ import './Info';
 import './Work';
 import LinkA from "../../components/Link/Link";
 import Work from './Work'
+import Upload from '../Upload/Upload'
+import {Link} from 'react-router-dom'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDribbble, faFacebook, faInstagram, faTelegram, faTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons"
@@ -19,7 +21,7 @@ const About = () => {
   // })
 
   // function getAbout() {
-  //   axios("")
+  //   axios("http://kaiaman.pythonanywhere.comhttp://kaiaman.pythonanywhere.com//api/erkindik/artists/")
   //   .then(response=> response.data) 
   //   setArtist({
   //     about: data.about
@@ -54,7 +56,9 @@ const About = () => {
           
             </div>
             <p>Добро пожаловать в мою страницу! Я Альфи и я ХУДОЖНИК... Тут я публикую свои работы и пишу картины на заказ, потому буду рада сотрудничеству. Присоединяйтесь, будет интересно!</p>
+            <a href="https://wa.me/996556552020">
             <button className='primary-btn'>Связаться со мной</button>
+        </a>
           </div>
         </div>
 
@@ -65,7 +69,7 @@ const About = () => {
       </section>
       <Work />
       
-      <button className='last-btn'>Загрузить картину</button>
+      <Link className='last-btn'to="/artists/about/upload">Загрузить картину</Link>
     </>
     
 

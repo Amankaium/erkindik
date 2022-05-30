@@ -30,7 +30,8 @@ const Info = () => {
                   <p>{value.desc1}</p>
                   <p>{value.desc2}</p>
                   <p>{value.desc3}</p>
-                  <button className='primary-btn'>Скачать CV</button>
+            <button className='primary-btn'>Скачать CV</button>
+      
                 </div>
                 <div className='right'>
                   <div className='img'>

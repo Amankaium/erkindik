@@ -8,6 +8,7 @@ import Info from './pages/Artists/Info';
 import Work from './pages/Artists/Work';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
+import Upload from './pages/Upload/Upload';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/artists/about" element={<About />} />
         <Route exact path="/artists/about/info" element={<Info />} />
         <Route exact path="/artists/about/work" element={<Work />} />
+        <Route exact path="/artists/about/upload" element={<Upload />} />
         <Route exact path="/search" element={<SearchPage />} />
         <Route exact path="/artInfo" element={<ArtInfo />} />
         <Route exact path="/login" element={<SignIn setLoginState={setLoginState} setToken={setToken}/>} />

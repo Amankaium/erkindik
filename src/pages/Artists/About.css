@@ -59,7 +59,7 @@ body {
 
 
 .aboutartist {
-    height:110vh;
+    height:100vh;
 
 }
 
@@ -150,6 +150,8 @@ body {
   }
   button {
     background: none;
+    width: 500px;
+    left:50px;
     outline: none;
     border: none;
     color: #fff;
@@ -161,10 +163,10 @@ body {
   
   .primary-btn {
     padding: 15px 40px;
-    background: #38d16a;
+    background: #827f7f;
   }
   .primary-btn:hover {
-    background: #f54ea2;
+    background: #3f3e3e;
     box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
   }
   .aboutartist .right {
@@ -199,9 +201,10 @@ body {
   
   .last-btn {
     padding: 15px 40px;
-    background: #38d16a;
+    background: #827f7f;
+
   }
   .last-btn:hover {
-    background: #f54ea2;
+    background: #3f3e3e;
     box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
   }
