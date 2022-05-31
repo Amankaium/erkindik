@@ -1,10 +1,10 @@
 import React,{useState } from 'react';
 import axios from 'axios';
 import './Upload.css';
-artists
+// artists
 
 
- main
+//  main
 
 function App() {
 

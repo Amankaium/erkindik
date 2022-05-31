@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import './ArtInfo.css';
 import { Link } from 'react-router-dom';
-import img1 from './boat_sc.jpeg';
+import img1 from './girl.jpeg';
 import axios from 'axios';
 
 export default function ArtInfo() {
@@ -50,7 +50,7 @@ export default function ArtInfo() {
             <div className="content">
                 <div className="picture-cont">
                     <div className="picture">
-                        <img height="350px" width="450px" src={img1} alt="sarychelek" />
+                        <img height="430px" width="490px" src={img1} alt="sarychelek" />
                     </div>
                 </div>
                 <div className="info-cont">
@@ -74,14 +74,14 @@ export default function ArtInfo() {
                 </div>
 
             </div>
-            <div className="otherworks">
-                <div className="other-work-text">Остальные работы автора</div>
+            {/* <div className="otherworks">
+                <div className="other-work-text">Похожие картины</div>
                 <div className="works-box">
                     {arts.map((art, id) => <div key={id} className="grid-box">
                         <img height="200px" width="250px" src={img1} alt="sarychelek" />
                     </div>)}
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
