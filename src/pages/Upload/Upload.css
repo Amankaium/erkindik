@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-/* body {
-  margin: auto;
-  padding: 0px;
-  overflow-x: hidden;
-  background-repeat: repeat;
-  font-family: 'Inter', san-serif;
-} */
-/* .container_mr-60cd {
-  font-family: 'Inter', san-serif; */
 
 .container {
   width: 100%;
@@ -20,9 +11,6 @@
   max-width: 100%;
   height: auto;
 }
-/* /* img {
-  /* max-width: 100%;
-  height: auto; */
 
 img.previewimg {
   margin: 27px auto;
@@ -45,9 +33,7 @@ img.previewimg {
   margin-bottom: 37px;
   font-weight: 600;
 }
-/* h2 span {
-  color: #07a8ff;
-} */
+
 .imageUploadSuccess {
   text-align: center;
   font-size: 27px;
@@ -92,7 +78,7 @@ img.previewimg {
   background-color: #1a1817;
   color: white;
   padding: 7px 27px 7px 27px;
-  margin-right: 200px;
+  margin-right: 700px;
   font-family: 'Inter', sans-serif;
   margin: 37px auto 0;
   display: table;
@@ -109,4 +95,3 @@ img.previewimg {
 .FormDataUserr {
   margin-left: 500px;
 }
-
