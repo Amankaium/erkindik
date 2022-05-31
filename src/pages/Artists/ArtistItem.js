@@ -15,7 +15,14 @@ function ArtistItem(props) {
           </figure>
           <div className='artists__item__info'>
             <h5 className='artists__item__text'>{props.text}</h5>
+
           </div>
+          <div className='artists__item__info'>
+            <h5 className='artists__item__description'>{props.description}</h5>
+            
+          </div>
+
+
         </Link>
       </li>
     </>

@@ -1,7 +1,10 @@
 import React,{useState } from 'react';
 import axios from 'axios';
 import './Upload.css';
+artists
 
+
+ main
 
 function App() {
 
