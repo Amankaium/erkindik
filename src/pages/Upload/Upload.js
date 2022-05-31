@@ -1,11 +1,6 @@
 import React,{useState } from 'react';
-
-// import ReactDOM from 'react-dom'
-
 import axios from 'axios';
 import './Upload.css';
-// import PostForm from './PostForm'
-// import './PostForm.css'
 
 function Upload() {
 
