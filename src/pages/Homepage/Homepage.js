@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Homepage.css";
 import Category from "../../components/Сategories/Сategory";
 import ImgCard from "../../components/MainImgCard/ImgCard";
+// import ImgCarusel from "../../components/ImgCarusel/ImgCarusel";
 // import SearchIcon from "../assets/search.png"
 
 function Homepage(props) {
@@ -113,6 +114,7 @@ function Homepage(props) {
 
       <div className="homepage2">
         <Category />
+        
         <div className="list-card">
           <h1 className="list-h1">Графический дизайн</h1>
           <div className="list">

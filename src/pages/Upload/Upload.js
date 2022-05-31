@@ -7,8 +7,6 @@ import './Upload.css';
 // import PostForm from './PostForm'
 // import './PostForm.css'
 
-
-
 function App() {
 
   const [userInfo, setuserInfo] = useState({

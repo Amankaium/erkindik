@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {Homepage, Artists, SignIn, SignUp, SearchPage, TermsCon} from './pages';
+import {Homepage, Artists, SignIn, SignUp, Search, TermsCon} from './pages';
 import Header from './components/Header/Header';
 import About from './pages/Artists/About';
 import Info from './pages/Artists/Info';
+import EditProfile from './pages/EditProfile/EditProfile';
 import Work from './pages/Artists/Work';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
-import Upload from './pages/Upload/Upload';
 
 
 
@@ -25,15 +25,15 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/artists" element={<Artists />} />
+        <Route exact path="/artists" element={<EditProfile />} />
         <Route exact path="/artists/about" element={<About />} />
         <Route exact path="/artists/about/info" element={<Info />} />
         <Route exact path="/artists/about/work" element={<Work />} />
-        <Route exact path="/search" element={<SearchPage />} />
+        <Route exact path="/search" element={<Search />} />
         <Route exact path="/artInfo" element={<ArtInfo />} />
         <Route exact path="/login" element={<SignIn setLoginState={setLoginState} setToken={setToken}/>} />
         <Route exact path="/register" element={<SignUp />} />
-        <Route exact path="/terms-and-condition" element={<TermsCon />} />
-        <Route exact path="/artists/about/upload" element={<Upload/>} />
+        <Route exact path="/terms-and-condition" element={<TermsCon/>} />
       </Routes>
       <Footer />
     </Router>
