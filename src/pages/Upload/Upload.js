@@ -7,13 +7,12 @@ import './Upload.css';
 // import PostForm from './PostForm'
 // import './PostForm.css'
 
-function App() {
+function Upload() {
 
   const [userInfo, setuserInfo] = useState({
     file:[],
     filepreview:null,
    });
-
   const handleInputChange = (event) => {
     setuserInfo({
       ...userInfo,
@@ -64,7 +63,7 @@ function App() {
             return error.response;
         });
     }
-
+console.log()
   const [isSuccess, setSuccess] = useState(null);
 
   return (
@@ -100,4 +99,4 @@ function App() {
   );
   }
 
-export default App;
+export default Upload;

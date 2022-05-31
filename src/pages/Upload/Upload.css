@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* body {
-  /* margin: auto;
+  margin: auto;
   padding: 0px;
   overflow-x: hidden;
   background-repeat: repeat;
   font-family: 'Inter', san-serif;
-}
-.container_mr-60cd {
+} */
+/* .container_mr-60cd {
   font-family: 'Inter', san-serif; */
 
 .container {
@@ -20,7 +20,7 @@
   max-width: 100%;
   height: auto;
 }
-/* img {
+/* /* img {
   /* max-width: 100%;
   height: auto; */
 
@@ -92,6 +92,7 @@ img.previewimg {
   background-color: #1a1817;
   color: white;
   padding: 7px 27px 7px 27px;
+  margin-right: 200px;
   font-family: 'Inter', sans-serif;
   margin: 37px auto 0;
   display: table;
