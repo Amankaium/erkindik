@@ -1,0 +1,22 @@
+.fav-icon {
+    height: 20px;
+}
+.artName {
+    font-size: 17px;
+    color: #767676;
+}
+.list-txt {
+    text-align: center;
+    justify-content: space-between;
+    font:  24px/34px Helvetica, Sans-Serif;
+}
+/* .list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1% 0;
+}  */
+.search-img {
+    height: 400px;
+    width: 400px;
+}
