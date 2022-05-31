@@ -84,7 +84,72 @@ function Homepage(props) {
           name: "author2",
           avatar: "",
         },
+      },  {
+        id: "9",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/dynamic_images/Image/480bfd2debb4462fbc23f1a04a2fefc9.jpg?tr=w-733,h-357",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      }, {
+        id: "10",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/b45e25dfdf9f4325a81dc1b721a69690.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      },{
+        id: "11",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/d696a6f4d4084acda81a51b82b8be06d.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      },{
+        id: "12",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/b76ec8c8cc5c4439a1885e7868d29f83.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      },{
+        id: "13",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/e5a8dca6e523435b99485eec51606935.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      }, {
+        id: "14",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/0c304015d751460c810d99e135c56533.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      }, {
+        id: "15",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/9cdfb2b739dd41b9828d42e4353c3ddf.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
+      }, {
+        id: "16",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/93dba65d399f460ba4d080f49e7726e9.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
       },
+      
   ];
 
   return (
@@ -132,13 +197,13 @@ function Homepage(props) {
         <div className="list-card">
           <h1 className="list-h1">Иллюстрации</h1>
           <div className="list">
-            <ImgCard className="img-1" image={images[3]} />
-            <ImgCard className="img-0" image={images[4]} />
+            <ImgCard className="img-1" image={images[9]} />
+            <ImgCard className="img-0" image={images[10]} />
           </div>
           <div className="list">
-            <ImgCard className="img-0" image={images[0]} />
-            <ImgCard className="img-0" image={images[1]} />
-            <ImgCard className="img-0" image={images[2]} />
+            <ImgCard className="img-0" image={images[11]} />
+            <ImgCard className="img-0" image={images[12]} />
+            <ImgCard className="img-0" image={images[13]} />
           </div>
         </div>
         <hr className="hr" />
@@ -147,9 +212,9 @@ function Homepage(props) {
           <h1 className="list-h1">Минимализм</h1>
           <div className="list">
             <ImgCard className="img-2" image={images[5]} />
-            <ImgCard className="img-2" image={images[5]} />
-            <ImgCard className="img-2" image={images[5]} />
-            <ImgCard className="img-2" image={images[5]} />
+            <ImgCard className="img-2" image={images[14]} />
+            <ImgCard className="img-2" image={images[15]} />
+            <ImgCard className="img-2" image={images[16]} />
           </div>
         </div>
         <hr className="hr" />

@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import './Search.css';
 
 const images = [
   {
@@ -43,15 +45,15 @@ const images = [
       name: "Aisuluu",
       img_url:"https://ik.imagekit.io/theartling/prod/dynamic_images/Image/94838a3043a544a6a1b114a9d712bbb5.jpg?tr=,w-704,h-704",
       author: {
-        name: "author2",
+        name: "Aisuluu",
         avatar: "",
       },
     },    {
       id: "5",
-      name: "Painting1",
+      name: "Painting3",
       img_url:"https://ik.imagekit.io/theartling/prod/dynamic_images/Image/00db3d801eb941eda0784802b623d980.jpg?tr=,w-506,h-506",
       author: {
-        name: "author2",
+        name: "author3",
         avatar: "",
       },
     },  {
@@ -96,22 +98,48 @@ function Search() {
 
   return (
     <div className="App">
-      <br/><br/><br/><br/><br/>
-      <input
-        type="text"
-        placeholder="Search"
-        value={searchTerm}
-        onChange={handleChange}
-      /><br/><br/>
-      <ul>
-        {results.map((item, id) => (
-          <li key={id}>
-            <img src={item.img_url}/>
-            <p>{item.name}</p>
-            <p>{item.author.name}</p>
-          </li>
-        ))}
-      </ul>
+      <div className="homepage1">
+        <div className="img-txt">
+          <h1 className="img-h1">ERKINDIK</h1>
+          <p className="mini-txt">
+            Прямо сейчас присоединяйся к нашему сообществу и находи{" "}
+          </p>
+          <p className="mini-txt"> нужные искусства из любой точки мира</p>
+          <br />
+        </div>
+        <div className="img-form">
+          <button className="button">
+            <img
+              className="svg"
+              src="https://cdn.icon-icons.com/icons2/1744/PNG/128/3643762-find-glass-magnifying-search-zoom_113420.png"
+            />
+          </button>
+          <input
+            type="text"
+            className="input"
+            placeholder="Поиск бесплатных фотографий с высоким разрешением"     
+            value={searchTerm}
+            onChange={handleChange}
+          />
+        </div>
+        </div>
+      <div>
+      </div>
+      {results.map((item, id) => (
+      <Link to="/artInfo" key={id} className="list">
+        <img src={item.img_url} className="search-img"/>
+        <p className="list-txt">
+            <div>
+                <p  align="left" className="artistName">{item.author.name}</p>
+                <p align="left" className="artName">{item.name}</p>
+            </div>
+            <div>
+                <img className="fav-icon" src="https://cdn.icon-icons.com/icons2/38/PNG/128/like_favorite_heart_5759.png"/>
+                <img className="fav-icon" src="https://cdn.icon-icons.com/icons2/1659/PNG/128/3844442-dot-menu-more-vertical_110310.png"/>
+            </div>
+        </p>
+    </Link>
+     ))}
     </div>
   );
 }
