@@ -27,7 +27,7 @@ function Header({setLoginState, setToken}) {
       <div className='header-links'>
         <div className='header-a'><LinkA href="/ArtInfo" >Произведения искусства</LinkA></div>
         <div className='header-a'><LinkA href="/Artists" className='header-a'>Художники</LinkA></div>
-        <div className='header-a'><LinkA href="/earch" className='header-a'>Найти картину</LinkA></div>
+        <div className='header-a'><LinkA href="/search" className='header-a'>Найти картину</LinkA></div>
         <div className='header-a'><LinkA href="/" className='header-a'>О нас</LinkA></div>
         <div className='header-a'><LinkA href="/login" className='header-a'>Добавить картину</LinkA></div>
       </div>
