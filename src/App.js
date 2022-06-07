@@ -10,6 +10,7 @@ import Work from './pages/Artists/Work';
 import ArtInfo from './pages/ArtInfo/ArtInfo';
 import Footer from './components/Footer/Footer';
 import Upload from './pages/Upload/Upload';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/artists/about/upload/"  element={<Upload />} />
         <Route exact path="/register" element={<SignUp />} />
         <Route exact path="/terms-and-condition" element={<TermsCon/>} />
+        <Route exact path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>
