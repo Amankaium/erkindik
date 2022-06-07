@@ -48,12 +48,6 @@ p {
     background: linear-gradient(rgb(13 4 11 / 46%), rgb(34 25 25 / 45%)),
     url(https://www.agenziagl.com/wp-content/uploads/revslider/news-gallery2/slide_venezia-1.jpg), center / cover;
 }
-.about-us-photo {
-    height: 600px;
-    width: 100vw;
-    background: linear-gradient(rgb(13 4 11 / 46%), rgb(34 25 25 / 45%)),
-    url(https://c0.wallpaperflare.com/preview/477/816/843/blue-and-multicolored-abstract-painting.jpg), center / cover;
-}
 .img-txt {
     padding-top: 200px;
 }
@@ -65,26 +59,9 @@ p {
 }
 .img-h1 {
     padding: 0% 22% 1% 0;
+
 }
 
-.img-h1-center {
-    color: white;
-    font-size: 80px;
-    padding: 0% 0% 2% 0%;
-    text-align: center;
-}
-
-.h1-center {
-    font-size: 30px;
-    padding: 0% 0% 5% 0%;
-    text-align: center;
-}
-
-.mini-txt-center {
-    color: white;
-    font-size: 25px;
-    text-align: center;
-}
 
 .list-card {
     padding: 3% 0;
