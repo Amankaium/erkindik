@@ -15,8 +15,16 @@ function Homepage(props) {
       author: {
         name: "author0",
         avatar: "",
-      },
-    },
+      }, },
+      {
+        id: "0",
+        name: "Painting0",
+        img_url:
+          "https://ik.imagekit.io/theartling/prod/dynamic_images/Image/1425988347b04641948d29f495532ee3.png?tr=,w-704,h-704",
+        author: {
+          name: "author0",
+          avatar: "",
+        }, },
     {
       id: "1",
       name: "Painting1",
