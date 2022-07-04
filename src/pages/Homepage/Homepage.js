@@ -148,6 +148,14 @@ function Homepage(props) {
           name: "author2",
           avatar: "",
         },
+      }, {
+        id: "16",
+        name: "Painting1",
+        img_url:"https://ik.imagekit.io/theartling/prod/products/Product/93dba65d399f460ba4d080f49e7726e9.jpg?tr=bg-FFFFFF,w-420,h-420",
+        author: {
+          name: "author2",
+          avatar: "",
+        },
       },
       
   ];
